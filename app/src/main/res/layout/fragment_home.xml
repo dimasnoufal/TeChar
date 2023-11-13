@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+
+        <!--        Foto Profil-->
+        <ImageView
+            android:id="@+id/image_profil"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@color/yellow" />
+
+        <LinearLayout
+            android:id="@+id/ly_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_profil">
+            <!--        Banner-->
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:iss_auto_cycle="true"
+                app:iss_delay="1000"
+                app:iss_period="1000"
+                app:iss_text_align="CENTER" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ly_slide">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--        Menu 1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="3"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon_1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Personality\nQuest" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="3"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon_2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="IT Career 101" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="3"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon_3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Code Learning\nHub" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <!--        Menu 2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="3"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon_4" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="CodeQuiz" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="3"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon_5" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="IT Scholarship" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="3"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon_6" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="CareerGuide\nPro" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <!--        Jenis Karir-->
+                <LinearLayout
+                    android:id="@+id/karirly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@id/selenkapnyakarir"
+                            android:text="Pengetahuan Jenis Karir"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/selenkapnyakarir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Selengkapnya"
+                            android:textColor="@color/blue"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                    <!--            karir pertama-->
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginVertical="10dp"-->
+<!--                        app:cardCornerRadius="20dp"-->
+<!--                        app:cardElevation="8dp">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <com.google.android.material.imageview.ShapeableImageView-->
+<!--                                android:id="@+id/listImageKarir"-->
+<!--                                android:layout_width="60dp"-->
+<!--                                android:layout_height="60dp"-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginBottom="10dp"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@mipmap/ic_launcher"-->
+<!--                                app:shapeAppearanceOverlay="@style/roundImage" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/listNameKarir"-->
+<!--                                android:layout_width="120dp"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:layout_marginStart="30dp"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:layout_toEndOf="@id/listImageKarir"-->
+<!--                                android:text="Lorem"-->
+<!--                                android:textStyle="bold"-->
+<!--                                android:textSize="20sp" />-->
+
+<!--                        </RelativeLayout>-->
+<!--                    </androidx.cardview.widget.CardView>-->
+<!--                    &lt;!&ndash;            Karir kedua&ndash;&gt;-->
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginVertical="10dp"-->
+<!--                        app:cardCornerRadius="20dp"-->
+<!--                        app:cardElevation="8dp">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <com.google.android.material.imageview.ShapeableImageView-->
+<!--                                android:id="@+id/listImageKarir1"-->
+<!--                                android:layout_width="60dp"-->
+<!--                                android:layout_height="60dp"-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginBottom="10dp"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@mipmap/ic_launcher"-->
+<!--                                app:shapeAppearanceOverlay="@style/roundImage" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/listNameKarir1"-->
+<!--                                android:layout_width="120dp"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:layout_marginStart="30dp"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:layout_toEndOf="@id/listImageKarir1"-->
+<!--                                android:text="Lorem"-->
+<!--                                android:textStyle="bold"-->
+<!--                                android:textSize="20sp" />-->
+<!--                        </RelativeLayout>-->
+<!--                    </androidx.cardview.widget.CardView>-->
+<!--                    &lt;!&ndash;            karir ketiga&ndash;&gt;-->
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginVertical="10dp"-->
+<!--                        app:cardCornerRadius="20dp"-->
+<!--                        app:cardElevation="8dp">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <com.google.android.material.imageview.ShapeableImageView-->
+<!--                                android:id="@+id/listImageKarir2"-->
+<!--                                android:layout_width="60dp"-->
+<!--                                android:layout_height="60dp"-->
+<!--                                android:layout_marginStart="10dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginBottom="10dp"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@mipmap/ic_launcher"-->
+<!--                                app:shapeAppearanceOverlay="@style/roundImage" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/listNameKarir2"-->
+<!--                                android:layout_width="120dp"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:layout_marginStart="30dp"-->
+<!--                                android:layout_marginTop="25dp"-->
+<!--                                android:layout_toEndOf="@id/listImageKarir2"-->
+<!--                                android:text="Lorem"-->
+<!--                                android:textStyle="bold"-->
+<!--                                android:textSize="20sp" />-->
+<!--                        </RelativeLayout>-->
+<!--                    </androidx.cardview.widget.CardView>-->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvkarir"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+                <!--            Berita-->
+                <LinearLayout
+                    android:id="@+id/beritaly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="80dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@id/selenkapnyaberita"
+                            android:text="Berita"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/selenkapnyaberita"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Selengkapnya"
+                            android:textColor="@color/blue"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvberita"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".detail.DetailKarirActivity">
+
+    <ImageView
+        android:id="@+id/image_karir"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@color/blue"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/namakarir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Karir"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/jeniskarir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Jenis Karir"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/gaji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 5.000.000.-"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/blue"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi :"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf."
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keahlian :"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/keahlian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
