@@ -2,9 +2,20 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.TeChar" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">#4484CE</item>
+        <item name="colorPrimary">#4484CE</item>
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
     </style>
 
     <style name="Theme.TeChar" parent="Base.Theme.TeChar" />
+
+    <style name="App.Costum.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/yellow</item>
+    </style>
+
+    <style name="roundImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

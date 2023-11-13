@@ -4,19 +4,24 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import com.unity.techar.fragment.HomeFragment
+import com.unity.techar.fragment.KonsultasiFragment
+import com.unity.techar.fragment.ProfilFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.unity.techar.auth.login.LoginActivity
 import com.unity.techar.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var binding : ActivityMainBinding
     var firebaseAuth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
         var context = this@MainActivity
         var sharedPref = context.getSharedPreferences(getString(R.string.condition_state), Context.MODE_PRIVATE)
@@ -25,22 +30,29 @@ class MainActivity : AppCompatActivity() {
         editor.putInt("condition_number", 4)
         editor.apply()
 
-        val firebaseUser = firebaseAuth.currentUser
-        if (firebaseUser != null) {
-            binding.tvNama.text = firebaseUser.displayName
-            binding.tvEmail.text = firebaseUser.email
-        } else {
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
-        }
+        bottomNavigationView = findViewById(R.id.bottom_navigation)
 
-        binding.btnLogout.setOnClickListener {
-            firebaseAuth.signOut()
-            Intent(this, LoginActivity::class.java).also {
-                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                startActivity(it)
+        bottomNavigationView.setOnItemSelectedListener { menuItem ->
+            when(menuItem.itemId){
+                R.id.bottom_home ->{
+                    repleaceFragment(HomeFragment())
+                    true
+                }
+                R.id.bottom_konsultasi ->{
+                    repleaceFragment(KonsultasiFragment())
+                    true
+                }
+                R.id.bottom_profil ->{
+                    repleaceFragment(ProfilFragment())
+                    true
+                }
+                else -> false
             }
         }
+        repleaceFragment(HomeFragment())
+    }
 
+    private fun repleaceFragment(fragment: Fragment){
+        supportFragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit()
     }
 }
