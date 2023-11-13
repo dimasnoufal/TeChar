@@ -19,11 +19,16 @@
             android:textStyle="bold"
             android:textSize="25sp"
             android:textAlignment="center"/>
-        <androidx.appcompat.widget.AppCompatEditText
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Search"/>
+            app:iconifiedByDefault="false"
+            app:searchHintIcon="@null"
+            app:queryHint="Search...."
+            android:focusable="false"
+            />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -36,403 +41,35 @@
 
 <!--        Rekomendasi Konsultasi-->
             <TextView
+                android:id="@+id/pencarian"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rekomendasi Konsultasi" />
-            <androidx.cardview.widget.CardView
+                android:text="Hasil Pencarian" />
+            <TextView
+            android:id="@+id/rekomendasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rekomendasi Konsultasi" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRKonsul"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImageKonsultasi"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"
-                        app:shapeAppearanceOverlay="@style/roundImage"/>
-
-                    <TextView
-                        android:id="@+id/listNameKonsultasi"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi"
-                        android:text="Lorem"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/listBidangKonsultasi"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi"
-                        android:layout_below="@id/listNameKonsultasi"
-                        android:text="Lorem Ipsum"
-                        android:textSize="20sp" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImageKonsultasi1"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"
-                        app:shapeAppearanceOverlay="@style/roundImage"/>
-
-                    <TextView
-                        android:id="@+id/listNameKonsultasi1"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi1"
-                        android:text="Lorem"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/listBidangKonsultasi1"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi1"
-                        android:layout_below="@id/listNameKonsultasi1"
-                        android:text="Lorem Ipsum"
-                        android:textSize="20sp" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImageKonsultasi2"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"
-                        app:shapeAppearanceOverlay="@style/roundImage"/>
-
-                    <TextView
-                        android:id="@+id/listNameKonsultasi2"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi2"
-                        android:text="Lorem"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/listBidangKonsultasi2"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi2"
-                        android:layout_below="@id/listNameKonsultasi2"
-                        android:text="Lorem Ipsum"
-                        android:textSize="20sp" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+                android:layout_height="match_parent"/>
 
 <!--        Semua Konsultasi-->
             <TextView
+                android:id="@+id/semua"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Semua Konsultasi" />
-            <androidx.cardview.widget.CardView
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSKonsul"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImageKonsultasi3"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"
-                        app:shapeAppearanceOverlay="@style/roundImage"/>
-
-                    <TextView
-                        android:id="@+id/listNameKonsultasi3"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi3"
-                        android:text="Lorem"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/listBidangKonsultasi3"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi3"
-                        android:layout_below="@id/listNameKonsultasi3"
-                        android:text="Lorem Ipsum"
-                        android:textSize="20sp" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImageKonsultasi4"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"
-                        app:shapeAppearanceOverlay="@style/roundImage"/>
-
-                    <TextView
-                        android:id="@+id/listNameKonsultasi4"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi4"
-                        android:text="Lorem"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/listBidangKonsultasi4"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi4"
-                        android:layout_below="@id/listNameKonsultasi4"
-                        android:text="Lorem Ipsum"
-                        android:textSize="20sp" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImageKonsultasi5"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"
-                        app:shapeAppearanceOverlay="@style/roundImage"/>
-
-                    <TextView
-                        android:id="@+id/listNameKonsultasi5"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi5"
-                        android:text="Lorem"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/listBidangKonsultasi5"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi5"
-                        android:layout_below="@id/listNameKonsultasi5"
-                        android:text="Lorem Ipsum"
-                        android:textSize="20sp" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImageKonsultasi6"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"
-                        app:shapeAppearanceOverlay="@style/roundImage"/>
-
-                    <TextView
-                        android:id="@+id/listNameKonsultasi6"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi6"
-                        android:text="Lorem"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/listBidangKonsultasi6"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi6"
-                        android:layout_below="@id/listNameKonsultasi6"
-                        android:text="Lorem Ipsum"
-                        android:textSize="20sp" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImageKonsultasi7"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"
-                        app:shapeAppearanceOverlay="@style/roundImage"/>
-
-                    <TextView
-                        android:id="@+id/listNameKonsultasi7"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi7"
-                        android:text="Lorem"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/listBidangKonsultasi7"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi7"
-                        android:layout_below="@id/listNameKonsultasi7"
-                        android:text="Lorem Ipsum"
-                        android:textSize="20sp" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImageKonsultasi8"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"
-                        app:shapeAppearanceOverlay="@style/roundImage"/>
-
-                    <TextView
-                        android:id="@+id/listNameKonsultasi8"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi8"
-                        android:text="Lorem"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/listBidangKonsultasi8"
-                        android:layout_width="120dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_toEndOf="@id/listImageKonsultasi8"
-                        android:layout_below="@id/listNameKonsultasi8"
-                        android:text="Lorem Ipsum"
-                        android:textSize="20sp" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+                android:layout_height="match_parent"/>
         </LinearLayout>
         </ScrollView>
     </LinearLayout>

@@ -22,7 +22,7 @@ class KarirAdapter(private  val karirList: ArrayList<KarirClass>): RecyclerView.
         val currentItem = karirList[position]
         holder.rvImage.setImageResource(currentItem.gambar)
         holder.rvNama.text = currentItem.nama
-        holder.rvKeahlian.text = currentItem.nama
+        holder.rvKeahlian.text = currentItem.keahlian
 
         holder.itemView.setOnClickListener{
             onItemClick?.invoke(currentItem)
