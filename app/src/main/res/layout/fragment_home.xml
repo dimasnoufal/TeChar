@@ -17,19 +17,18 @@
             android:id="@+id/image_profil"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@color/yellow" />
+            android:src="@drawable/baseline_account_circle_24" />
 
         <LinearLayout
             android:id="@+id/ly_slide"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_below="@id/image_profil">
             <!--        Banner-->
             <com.denzcoskun.imageslider.ImageSlider
                 android:id="@+id/image_slider"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
                 app:iss_auto_cycle="true"
                 app:iss_delay="1000"
                 app:iss_period="1000"
@@ -54,6 +53,7 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_personality"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_weight="3"
@@ -128,7 +128,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Code Learning\nHub" />
+                                android:text="Learning\nHub" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -142,6 +142,7 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_code_quiz"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_weight="3"
@@ -188,7 +189,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="IT Scholarship" />
+                                android:text="News" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -214,7 +215,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="CareerGuide\nPro" />
+                                android:text="Discus" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -223,7 +224,7 @@
                     android:id="@+id/karirly"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="24dp"
                     android:orientation="vertical">
 
                     <RelativeLayout
@@ -235,8 +236,9 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_toLeftOf="@id/selenkapnyakarir"
-                            android:text="Pengetahuan Jenis Karir"
-                            android:textSize="20sp" />
+                            android:text="Recomendation career"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/selenkapnyakarir"
@@ -245,7 +247,7 @@
                             android:layout_alignParentRight="true"
                             android:text="Selengkapnya"
                             android:textColor="@color/blue"
-                            android:textSize="15sp" />
+                            android:textSize="14sp" />
                     </RelativeLayout>
                     <!--            karir pertama-->
 <!--                    <androidx.cardview.widget.CardView-->
@@ -365,7 +367,7 @@
                     android:id="@+id/beritaly"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="24dp"
                     android:layout_marginBottom="80dp"
                     android:orientation="vertical">
                     <RelativeLayout
@@ -377,8 +379,9 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_toLeftOf="@id/selenkapnyaberita"
-                            android:text="Berita"
-                            android:textSize="20sp" />
+                            android:text="News"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/selenkapnyaberita"
