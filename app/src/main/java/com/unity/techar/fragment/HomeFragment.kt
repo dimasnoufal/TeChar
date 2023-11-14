@@ -14,6 +14,7 @@ import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 import com.unity.techar.R
 import com.unity.techar.adapter.BeritaClass
+import com.unity.techar.detail.DetailKarirActivity
 import com.unity.techar.karir.BeritaAdapter
 import com.unity.techar.karir.KarirActivity
 import com.unity.techar.karir.KarirAdapter
@@ -25,9 +26,14 @@ class HomeFragment : Fragment() {
     private lateinit var Skarir: TextView
     private lateinit var recyclerView: RecyclerView
     private lateinit var karirList: ArrayList<KarirClass>
+    lateinit var myAdapter: KarirAdapter
     lateinit var gambarList:Array<Int>
     lateinit var namaList:Array<String>
     lateinit var keahlianList:Array<String>
+    lateinit var gambarDetail:Array<Int>
+    lateinit var gajiDetail:Array<String>
+    lateinit var deskripsiDetail:Array<String>
+    lateinit var keahlianDetail:Array<String>
 
     private lateinit var recyclerViewb: RecyclerView
     private lateinit var beritaList: ArrayList<BeritaClass>
@@ -61,6 +67,26 @@ class HomeFragment : Fragment() {
             "Lorem",
             "Lorem",
             "Lorem")
+        gambarDetail = arrayOf(
+            R.drawable.banner_1,
+            R.drawable.banner_1,
+            R.drawable.banner_1
+        )
+        gajiDetail = arrayOf(
+            getString(R.string.gaji),
+            getString(R.string.gaji1),
+            getString(R.string.gaji1)
+        )
+        deskripsiDetail = arrayOf(
+            getString(R.string.detailDeskripsi),
+            getString(R.string.detailDeskripsi1),
+            getString(R.string.detailDeskripsi2)
+        )
+        keahlianDetail = arrayOf(
+            getString(R.string.keahlian),
+            getString(R.string.keahlian1),
+            getString(R.string.keahlian2)
+        )
 
         recyclerView = view.findViewById(R.id.rvkarir)
         recyclerView.layoutManager = LinearLayoutManager(requireActivity())
@@ -68,6 +94,14 @@ class HomeFragment : Fragment() {
 
         karirList = arrayListOf<KarirClass>()
         getData()
+        myAdapter = KarirAdapter(karirList)
+        recyclerView.adapter = myAdapter
+
+        myAdapter.onItemClick = {
+            val intent = Intent(requireActivity(), DetailKarirActivity::class.java)
+            intent.putExtra("android", it)
+            startActivity(intent)
+        }
 
 //        berita
         gambarBerita = arrayOf(
@@ -101,6 +135,7 @@ class HomeFragment : Fragment() {
         beritaList = arrayListOf<BeritaClass>()
         getDataBerita()
 
+
         Skarir = view.findViewById(R.id.selenkapnyakarir)
         imageslider = view.findViewById(R.id.image_slider)
 
@@ -109,16 +144,16 @@ class HomeFragment : Fragment() {
         }
 
         val imageList = ArrayList<SlideModel>()
-        imageList.add(SlideModel("https://t3.ftcdn.net/jpg/04/95/28/68/360_F_495286861_E92XpoIILLyv4X8QnROZr9UTInWyj12y.jpg"))
-        imageList.add(SlideModel("https://cdn.pixabay.com/photo/2016/08/03/09/03/universe-1566159_640.jpg"))
-        imageList.add(SlideModel("https://t4.ftcdn.net/jpg/04/95/28/65/360_F_495286577_rpsT2Shmr6g81hOhGXALhxWOfx1vOQBa.jpg"))
+        imageList.add(SlideModel(R.drawable.banner_1))
+        imageList.add(SlideModel(R.drawable.banner_2))
+        imageList.add(SlideModel(R.drawable.banner_3))
 
         imageslider.setImageList(imageList, ScaleTypes.CENTER_INSIDE)
     }
 
     private fun getData(){
         for (i in gambarList.indices){
-            val karirClass = KarirClass(gambarList[i], namaList[i], keahlianList[1])
+            val karirClass = KarirClass(gambarList[i], namaList[i], keahlianList[1], gambarDetail[i], gajiDetail[i], deskripsiDetail[i], keahlianDetail[i])
             karirList.add(karirClass)
         }
         recyclerView.adapter = KarirAdapter(karirList)

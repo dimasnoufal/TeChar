@@ -10,6 +10,8 @@ import com.unity.techar.R
 
 class KarirAdapter(private  val karirList: ArrayList<KarirClass>): RecyclerView.Adapter<KarirAdapter.ViewHolderClass>() {
 
+
+    var onItemClick: ((KarirClass) -> Unit)? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderClass {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_karir, parent, false)
         return  ViewHolderClass(itemView)
@@ -20,7 +22,11 @@ class KarirAdapter(private  val karirList: ArrayList<KarirClass>): RecyclerView.
         val currentItem = karirList[position]
         holder.rvImage.setImageResource(currentItem.gambar)
         holder.rvNama.text = currentItem.nama
-        holder.rvKeahlian.text = currentItem.nama
+        holder.rvKeahlian.text = currentItem.keahlian
+
+        holder.itemView.setOnClickListener{
+            onItemClick?.invoke(currentItem)
+        }
     }
 
     override fun getItemCount(): Int {
