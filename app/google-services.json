@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "916763779238",
+    "project_id": "techar-3693c",
+    "storage_bucket": "techar-3693c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916763779238:android:0a9efb0992cc1690d61467",
+        "android_client_info": {
+          "package_name": "com.unity.techar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOnrc1nsneWH2u3Nt_8gisFHqnfK54c-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

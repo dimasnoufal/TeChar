@@ -27,14 +27,35 @@
             android:name=".detail.DetailKarirActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".auth.success.SuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.landing.LandingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onboarding.OnBoardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".auth.forget_password.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.register.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
