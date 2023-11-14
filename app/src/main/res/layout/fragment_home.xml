@@ -17,7 +17,7 @@
             android:id="@+id/image_profil"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@color/yellow" />
+            android:src="@color/biru_mudah" />
 
         <LinearLayout
             android:id="@+id/ly_slide"

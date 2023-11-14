@@ -7,9 +7,76 @@
     android:orientation="vertical"
     tools:context=".detail.DetailBeritaActivity">
 
-    <WebView
-        android:id="@+id/webview"
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/image_berita"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner_1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/judulberita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem Ipsum "
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/namaauthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/deskripsiberita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf."
+                android:textSize="20sp"/>
+
+            <TextView
+                android:textStyle="italic"
+                android:textColor="@color/blue"
+                android:id="@+id/sumberberita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem.com"
+                android:justificationMode="inter_word"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/beritaweb"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Baca Selengkapnya"/>
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

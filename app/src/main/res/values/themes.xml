@@ -10,7 +10,7 @@
     <style name="Theme.TeChar" parent="Base.Theme.TeChar" />
 
     <style name="App.Costum.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/yellow</item>
+        <item name="android:color">@color/biru_mudah</item>
     </style>
 
     <style name="roundImage">

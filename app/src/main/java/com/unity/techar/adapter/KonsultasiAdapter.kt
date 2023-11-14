@@ -7,9 +7,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.unity.techar.R
+import com.unity.techar.berita.BeritaClass
 import com.unity.techar.karir.KarirAdapter
 
 class KonsultasiAdapter(private val konsultasiList: ArrayList<KonsultasiClass>): RecyclerView.Adapter<KonsultasiAdapter.ViewHolderClass>() {
+
+    var onItemClick: ((KonsultasiClass) -> Unit)? = null
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -24,6 +27,10 @@ class KonsultasiAdapter(private val konsultasiList: ArrayList<KonsultasiClass>):
         holder.rvImageK.setImageResource(currentItem.gambarK)
         holder.rvNamaK.text = currentItem.namaK
         holder.rvBidangK.text = currentItem.bidangK
+
+        holder.itemView.setOnClickListener{
+            onItemClick?.invoke(currentItem)
+        }
     }
 
     override fun getItemCount(): Int {
