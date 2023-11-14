@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -11,12 +10,33 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeChar"
         tools:targetApi="31">
+        <activity
+            android:name=".tes_kepribadian.HasilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tes_kepribadian.SoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tes_kepribadian.PetunjukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tes_kepribadian.BeginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_coding.QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_coding.ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_coding.WelcomeActivity"
+            android:exported="false" />
         <activity
             android:name=".karir.KarirActivity"
             android:exported="false" />
@@ -37,7 +57,7 @@
             android:exported="false" />
         <activity
             android:name=".splash.SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

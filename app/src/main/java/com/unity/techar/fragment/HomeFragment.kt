@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.denzcoskun.imageslider.ImageSlider
@@ -19,6 +20,8 @@ import com.unity.techar.karir.BeritaAdapter
 import com.unity.techar.karir.KarirActivity
 import com.unity.techar.karir.KarirAdapter
 import com.unity.techar.karir.KarirClass
+import com.unity.techar.quiz_coding.WelcomeActivity
+import com.unity.techar.tes_kepribadian.BeginActivity
 
 class HomeFragment : Fragment() {
 
@@ -41,6 +44,9 @@ class HomeFragment : Fragment() {
     lateinit var namaBerita:Array<String>
     lateinit var deskripsiBerita:Array<String>
 
+    private lateinit var CvCodeQuiz: CardView
+    private lateinit var CvPersonality: CardView
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -51,6 +57,17 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        CvCodeQuiz = view.findViewById(R.id.cv_code_quiz)
+        CvPersonality = view.findViewById(R.id.cv_personality)
+
+        CvCodeQuiz.setOnClickListener {
+            startActivity(Intent(requireActivity(), WelcomeActivity::class.java))
+        }
+
+        CvPersonality.setOnClickListener {
+            startActivity(Intent(requireActivity(), BeginActivity::class.java))
+        }
 
 //        Karir
         gambarList = arrayOf(
