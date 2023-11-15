@@ -26,90 +26,90 @@ class KarirActivity : AppCompatActivity() {
         setContentView(R.layout.activity_karir)
 
         gambarList = arrayOf(
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1
+            R.drawable.it_career_1,
+            R.drawable.it_career_2,
+            R.drawable.it_career_3,
+            R.drawable.it_career_4,
+            R.drawable.it_career_1,
+            R.drawable.it_career_2,
+            R.drawable.it_career_3,
+            R.drawable.it_career_4,
+            R.drawable.it_career_1,
+            R.drawable.it_career_2
         )
 
         namaList = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem"
+            "Website Development",
+            "Android Development",
+            "Data Science",
+            "Website Development",
+            "Android Development",
+            "Data Science",
+            "Website Development",
+            "Android Development",
+            "Data Science",
+            "Website Development"
         )
 
         keahlianList = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem"
+            "Engeneering",
+            "Engeneering",
+            "Engeneering",
+            "Engeneering",
+            "Engeneering",
+            "Engeneering",
+            "Engeneering",
+            "Engeneering",
+            "Engeneering",
+            "Engeneering"
         )
         gambarDetail = arrayOf(
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1
+            R.drawable.ilustaris_career_1,
+            R.drawable.ilustaris_career_2,
+            R.drawable.ilustaris_career_3,
+            R.drawable.ilustaris_career_1,
+            R.drawable.ilustaris_career_2,
+            R.drawable.ilustaris_career_3,
+            R.drawable.ilustaris_career_1,
+            R.drawable.ilustaris_career_2,
+            R.drawable.ilustaris_career_3,
+            R.drawable.ilustaris_career_1
         )
         gajiDetail = arrayOf(
             getString(R.string.gaji),
             getString(R.string.gaji1),
-            getString(R.string.gaji1),
-            getString(R.string.gaji1),
+            getString(R.string.gaji2),
             getString(R.string.gaji),
             getString(R.string.gaji1),
+            getString(R.string.gaji2),
+            getString(R.string.gaji),
             getString(R.string.gaji1),
-            getString(R.string.gaji1),
-            getString(R.string.gaji1),
-            getString(R.string.gaji1)
+            getString(R.string.gaji2),
+            getString(R.string.gaji)
         )
         deskripsiDetail = arrayOf(
             getString(R.string.detailDeskripsi),
             getString(R.string.detailDeskripsi1),
             getString(R.string.detailDeskripsi2),
+            getString(R.string.detailDeskripsi),
+            getString(R.string.detailDeskripsi1),
             getString(R.string.detailDeskripsi2),
             getString(R.string.detailDeskripsi),
             getString(R.string.detailDeskripsi1),
             getString(R.string.detailDeskripsi2),
-            getString(R.string.detailDeskripsi2),
-            getString(R.string.detailDeskripsi2),
-            getString(R.string.detailDeskripsi2)
+            getString(R.string.detailDeskripsi)
         )
         keahlianDetail = arrayOf(
             getString(R.string.keahlian),
             getString(R.string.keahlian1),
             getString(R.string.keahlian2),
+            getString(R.string.keahlian),
+            getString(R.string.keahlian1),
             getString(R.string.keahlian2),
             getString(R.string.keahlian),
             getString(R.string.keahlian1),
             getString(R.string.keahlian2),
-            getString(R.string.keahlian2),
-            getString(R.string.keahlian2),
-            getString(R.string.keahlian2)
+            getString(R.string.keahlian)
         )
 
         recyclerView = findViewById(R.id.rvkarir)

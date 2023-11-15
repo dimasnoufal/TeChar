@@ -10,13 +10,13 @@
 
     <ImageView
         android:id="@+id/imagekonsultasi"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@drawable/discus_1"/>
     <TextView
         android:id="@+id/namakonsultasi"
-        android:text="Lorem"
+        android:text="Diskusi dan Komunitas"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -26,8 +26,9 @@
 
     <TextView
         android:id="@+id/bidangkonsultasi"
-        android:text="Lorem"
+        android:text="TeChar Community"
         android:textSize="20sp"
+        android:layout_marginTop="8dp"
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -42,7 +43,7 @@
 
     <TextView
         android:id="@+id/deskripsikonsultasi"
-        android:text="lorem Ipsum"
+        android:text="Diskusi dan Komunitas: Tak ada yang lebih memperkaya daripada berbagi pemikiran dan pandangan. Temukan tempat untuk berdiskusi, bertukar ide, dan terhubung dengan komunitas yang peduli serta memiliki minat serupa. Perluaslah jaringan melalui komunitas TeChar!"
         android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

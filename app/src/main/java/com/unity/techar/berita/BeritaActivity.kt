@@ -28,65 +28,65 @@ class BeritaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_berita)
 
         gambarBList = arrayOf(
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1
         )
 
         judulBList = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem"
+            getString(R.string.judulberita),
+            getString(R.string.judulberita1),
+            getString(R.string.judulberita2),
+            getString(R.string.judulberita),
+            getString(R.string.judulberita1),
+            getString(R.string.judulberita2),
+            getString(R.string.judulberita),
+            getString(R.string.judulberita1),
+            getString(R.string.judulberita2),
+            getString(R.string.judulberita)
         )
         tanggalBList = arrayOf(
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023"
+            "14-November-2023",
+            "16-Agustus-2023",
+            "15-November-2023",
+            "14-November-2023",
+            "16-Agustus-2023",
+            "15-November-2023",
+            "14-November-2023",
+            "16-Agustus-2023",
+            "15-November-2023",
+            "14-November-2023",
         )
         detailGambarB = arrayOf(
-            R.drawable.banner_1,
-            R.drawable.banner_2,
-            R.drawable.banner_3,
-            R.drawable.banner_1,
-            R.drawable.banner_2,
-            R.drawable.banner_3,
-            R.drawable.banner_1,
-            R.drawable.banner_2,
-            R.drawable.banner_3,
-            R.drawable.banner_1
+            R.drawable.ilustrasi_news_1,
+            R.drawable.ilustrasi_news_2,
+            R.drawable.ilustrasi_news_1,
+            R.drawable.ilustrasi_news_2,
+            R.drawable.ilustrasi_news_1,
+            R.drawable.ilustrasi_news_2,
+            R.drawable.ilustrasi_news_1,
+            R.drawable.ilustrasi_news_2,
+            R.drawable.ilustrasi_news_1,
+            R.drawable.ilustrasi_news_1
         )
         authorBList = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-        "Lorem",
-        "Lorem",
-        "Lorem",
-        "Lorem",
-        "Lorem",
-        "Lorem"
+            "Rifki Wuda Sudirman",
+            "Mahar Prastiwi dan Dian Ihsan",
+            "Yohan",
+            "Rifki Wuda Sudirman",
+            "Mahar Prastiwi dan Dian Ihsan",
+            "Yohan",
+            "Rifki Wuda Sudirman",
+            "Mahar Prastiwi dan Dian Ihsan",
+            "Yohan",
+            "Rifki Wuda Sudirman"
         )
         deskripsBList = arrayOf(
             getString(R.string.deskripsiBerita),

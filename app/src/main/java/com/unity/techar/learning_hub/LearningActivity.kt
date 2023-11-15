@@ -26,80 +26,80 @@ class LearningActivity : AppCompatActivity() {
         setContentView(R.layout.activity_learning)
 
         gambarList = arrayOf(
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1
+            R.drawable.pelatihan_1,
+            R.drawable.pelatihan_3,
+            R.drawable.pelatihan_1,
+            R.drawable.pelatihan_3,
+            R.drawable.pelatihan_1,
+            R.drawable.pelatihan_3,
+            R.drawable.pelatihan_1,
+            R.drawable.pelatihan_3,
+            R.drawable.pelatihan_1,
+            R.drawable.pelatihan_3
         )
 
         namaList = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem"
+            "Data Scientist",
+            "Android Developer",
+            "Front-End Web",
+            "Android Developer",
+            "Data Scientist",
+            "Android Developer",
+            "Front-End Web",
+            "Android Developer",
+            "Data Scientist",
+            "Android Developer"
         )
 
         ahliList = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem"
+            "Dicoding",
+            "Google for Developers",
+            "Dicoding",
+            "Google for Developers",
+            "Dicoding",
+            "Google for Developers",
+            "Dicoding",
+            "Google for Developers",
+            "Dicoding",
+            "Google for Developers"
         )
         gambarDetail = arrayOf(
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1
+            R.drawable.pelatihan_1,
+            R.drawable.pelatihan_3,
+            R.drawable.pelatihan_1,
+            R.drawable.pelatihan_3,
+            R.drawable.pelatihan_1,
+            R.drawable.pelatihan_3,
+            R.drawable.pelatihan_1,
+            R.drawable.pelatihan_3,
+            R.drawable.pelatihan_1,
+            R.drawable.pelatihan_3
         )
 
         deskripsi = arrayOf(
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-        )
+            getString(R.string.deskripsiLearning),
+            getString(R.string.deskripsiGoogle),
+            getString(R.string.deskripsiLearning1),
+            getString(R.string.deskripsiGoogle),
+            getString(R.string.deskripsiLearning),
+            getString(R.string.deskripsiGoogle),
+            getString(R.string.deskripsiLearning1),
+            getString(R.string.deskripsiGoogle),
+            getString(R.string.deskripsiLearning),
+            getString(R.string.deskripsiGoogle),
+            )
 
         sumber = arrayOf(
-            "https://www.dicoding.com",
-            "https://www.dicoding.com",
-            "https://www.dicoding.com",
-            "https://www.dicoding.com",
-            "https://www.dicoding.com",
-            "https://www.dicoding.com",
-            "https://www.dicoding.com",
-            "https://www.dicoding.com",
-            "https://www.dicoding.com",
-            "https://www.dicoding.com",
+            getString(R.string.linkDicoding),
+            getString(R.string.linkGoogle),
+            getString(R.string.linkDicoding1),
+            getString(R.string.linkGoogle),
+            getString(R.string.linkDicoding),
+            getString(R.string.linkGoogle),
+            getString(R.string.linkDicoding1),
+            getString(R.string.linkGoogle),
+            getString(R.string.linkDicoding),
+            getString(R.string.linkGoogle),
         )
 
         recyclerView = findViewById(R.id.rvLearning)
