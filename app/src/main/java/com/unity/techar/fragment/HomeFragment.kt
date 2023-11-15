@@ -105,38 +105,38 @@ class HomeFragment : Fragment() {
 
 //        Karir
         gambarList = arrayOf(
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1)
+            R.drawable.it_career_1,
+            R.drawable.it_career_2,
+            R.drawable.it_career_3)
 
         namaList = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem")
+            "Website Development",
+            "Data Science",
+            "Android Development")
 
         keahlianList = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem")
+            "Engineering",
+            "Engineering",
+            "Engineering")
         gambarDetail = arrayOf(
-            R.drawable.banner_1,
-            R.drawable.banner_1,
-            R.drawable.banner_1
+            R.drawable.ilustaris_career_1,
+            R.drawable.ilustaris_career_2,
+            R.drawable.ilustaris_career_3
         )
         gajiDetail = arrayOf(
             getString(R.string.gaji),
-            getString(R.string.gaji1),
+            getString(R.string.gaji2),
             getString(R.string.gaji1)
         )
         deskripsiDetail = arrayOf(
             getString(R.string.detailDeskripsi),
-            getString(R.string.detailDeskripsi1),
-            getString(R.string.detailDeskripsi2)
+            getString(R.string.detailDeskripsi2),
+            getString(R.string.detailDeskripsi1)
         )
         keahlianDetail = arrayOf(
             getString(R.string.keahlian),
-            getString(R.string.keahlian1),
-            getString(R.string.keahlian2)
+            getString(R.string.keahlian2),
+            getString(R.string.keahlian1)
         )
 
         recyclerView = view.findViewById(R.id.rvkarir)
@@ -156,53 +156,41 @@ class HomeFragment : Fragment() {
 
 //        berita
         gambarBerita = arrayOf(
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1,
-            R.drawable.icon_1)
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1,
+            R.drawable.icon_news_1)
 
         namaBerita = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem")
+            getString(R.string.judulberita),
+            getString(R.string.judulberita1),
+            getString(R.string.judulberita2),
+            getString(R.string.judulberita))
 
 
         deskripsiBerita = arrayOf(
             getString(R.string.deskripsiBerita),
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.")
+            getString(R.string.deskripsiBerita1),
+            getString(R.string.deskripsiBerita2),
+            getString(R.string.deskripsiBerita))
 
         detailGambarB = arrayOf(
-            R.drawable.banner_1,
-            R.drawable.banner_2,
-            R.drawable.banner_3,
-            R.drawable.banner_1,
-            R.drawable.banner_2,
-            R.drawable.banner_3,
+            R.drawable.ilustrasi_news_1,
+            R.drawable.ilustrasi_news_2,
+            R.drawable.ilustrasi_news_1,
+            R.drawable.ilustrasi_news_2
         )
         tanggalBList = arrayOf(
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
-            "17-November-2023",
+            "14-November-2023",
+            "16-Agustus-2023",
+            "15-November-2023",
+            "14-November-2023"
         )
         authorBList = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
+            "Rifki Wuda Sudirman",
+            "Mahar Prastiwi dan Dian Ihsan",
+            "Yohan",
+            "Rifki Wuda Sudirman"
         )
 
 
@@ -211,9 +199,7 @@ class HomeFragment : Fragment() {
             getString(R.string.sumber),
             getString(R.string.sumber1),
             getString(R.string.sumber2),
-            getString(R.string.sumber),
-            getString(R.string.sumber1),
-            getString(R.string.sumber2),
+            getString(R.string.sumber)
         )
 
         recyclerViewb = view.findViewById(R.id.rvberitab)

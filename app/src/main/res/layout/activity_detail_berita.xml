@@ -12,8 +12,7 @@
         android:id="@+id/image_berita"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/banner_1"/>
+        android:src="@drawable/ilustrasi_news_1"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -34,6 +33,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:layout_marginTop="8dp"
                 android:id="@+id/namaauthor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,6 +41,7 @@
                 android:textSize="20sp"/>
 
             <TextView
+                android:layout_marginTop="8dp"
                 android:id="@+id/tanggal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,6 +60,7 @@
                 android:textSize="20sp"/>
 
             <TextView
+                android:layout_marginTop="8dp"
                 android:textStyle="italic"
                 android:textColor="@color/blue"
                 android:id="@+id/sumberberita"

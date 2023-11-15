@@ -9,11 +9,10 @@
 
     <ImageView
         android:layout_marginTop="5dp"
-        android:scaleType="fitXY"
         android:id="@+id/image_karir"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/banner_1"/>
+        android:src="@drawable/ilustaris_career_1"/>
 
     <ScrollView
         android:layout_width="match_parent"

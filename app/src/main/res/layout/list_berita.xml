@@ -28,6 +28,7 @@
                     android:id="@+id/berita"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
+                    android:maxLength="15"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textStyle="bold"

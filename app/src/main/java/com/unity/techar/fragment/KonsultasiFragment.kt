@@ -57,27 +57,27 @@ class KonsultasiFragment : Fragment() {
 
 //        Rekomendasi
         gambarList = arrayOf(
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher)
+            R.drawable.icon_konsultasi_2,
+            R.drawable.icon_konsultasi_2,
+            R.drawable.icon_konsultasi_1)
 
         namaList = arrayOf(
-            "A",
-            "C",
-            "E")
+            "Nia Kinara",
+            "Widya Arinda",
+            "Wijayanto Kusuma")
 
         bidangList = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem")
+            "Data Science",
+            "Android Development",
+            "Website Development")
         detailgambarK = arrayOf(
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher)
+            R.drawable.icon_konsultasi_2,
+            R.drawable.icon_konsultasi_2,
+            R.drawable.icon_konsultasi_1)
         deskrpsiK = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem")
+            getString(R.string.deskripsi_konsultasi),
+            getString(R.string.deskripsi_konsultasi_1),
+            getString(R.string.deskripsi_konsultasi_2))
         linkK = arrayOf(
             getString(R.string.link),
             getString(R.string.link),
@@ -148,42 +148,42 @@ class KonsultasiFragment : Fragment() {
 
 //        semua
         gambarListS = arrayOf(
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher)
+            R.drawable.icon_konsultasi_1,
+            R.drawable.icon_konsultasi_2,
+            R.drawable.icon_konsultasi_2,
+            R.drawable.icon_konsultasi_1,
+            R.drawable.icon_konsultasi_1,
+            R.drawable.icon_konsultasi_2)
 
         namaListS = arrayOf(
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F")
+            "Wijayanto Kusuma",
+            "Widya Arinda",
+            "Nia Kinara",
+            "Wijayanto Kusuma",
+            "Wijayanto Kusuma",
+            "Widya Arinda")
 
         bidangListS = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem")
+            "Website Development",
+            "Android Development",
+            "Data Science",
+            "Website Development",
+            "Website Development",
+            "Android Development")
         detailgambarK = arrayOf(
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher,
-            R.mipmap.ic_launcher)
+            R.drawable.icon_konsultasi_1,
+            R.drawable.icon_konsultasi_2,
+            R.drawable.icon_konsultasi_2,
+            R.drawable.icon_konsultasi_1,
+            R.drawable.icon_konsultasi_1,
+            R.drawable.icon_konsultasi_2)
         deskrpsiK = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem")
+            getString(R.string.deskripsi_konsultasi_2),
+            getString(R.string.deskripsi_konsultasi_1),
+            getString(R.string.deskripsi_konsultasi),
+            getString(R.string.deskripsi_konsultasi_2),
+            getString(R.string.deskripsi_konsultasi_2),
+            getString(R.string.deskripsi_konsultasi_1))
         linkK = arrayOf(
             getString(R.string.link),
             getString(R.string.link),

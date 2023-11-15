@@ -6,70 +6,61 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--    Karir-->
-    <string name="detailDeskripsi">A list view is an adapter view that does not know the details, such as type and contents, of the views it contains.
-        Instead list view requests views on demand from a ListAdapter as needed, such as to display new views as the
-        user scrolls up or down. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide.</string>
-    <string name="detailDeskripsi1">A list view is an adapter view that does not know the details, such as type and contents, of the views it contains.
-        Instead list view requests views on demand from a ListAdapter as needed, such as to display new views as the
-        user scrolls up or down. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide.</string>
-    <string name="detailDeskripsi2">A list view is an adapter view that does not know the details, such as type and contents, of the views it contains.
-        Instead list view requests views on demand from a ListAdapter as needed, such as to display new views as the
-        user scrolls up or down. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide.</string>
+    <string name="detailDeskripsi">Web development adalah proses membangun dan memelihara situs web. Proses ini mencakup berbagai tugas, mulai dari desain, pengembangan, hingga pemeliharaan. Secara umum, web development dibagi menjadi dua jenis, yaitu Front-end Development dan Back-end Development.</string>
+    <string name="detailDeskripsi1">Android development adalah proses pengembangan aplikasi untuk perangkat yang menjalankan sistem operasi Android. Aplikasi Android dapat berupa berbagai macam, mulai dari game, aplikasi produktivitas, hingga aplikasi sosial.</string>
+    <string name="detailDeskripsi2">Data science adalah bidang ilmu yang mempelajari proses pengolahan data, mulai dari penggalian hingga presentasi datanya. Tujuan utamanya adalah untuk mengubah data mentah menjadi informasi yang bermanfaat. Data science merupakan kombinasi dari berbagai bidang ilmu, termasuk matematika, statistik, pemrograman, dan ilmu komputer. Data scientist perlu memiliki pengetahuan dan keterampilan dalam berbagai bidang ini untuk dapat menganalisis data dan menghasilkan informasi yang bermanfaat.</string>
 
-    <string name="gaji">Rp.4.000.000.-</string>
-    <string name="gaji1">Rp.6.000.000.-</string>
-    <string name="gaji2">Rp. 10.000.000.-</string>
+    <string name="gaji">Rp8.500.000/bulan</string>
+    <string name="gaji1">Rp11.000.000/bulan</string>
+    <string name="gaji2">Rp9.000.000/bulan</string>
 
-    <string name="keahlian">- Lorem Ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum</string>
-    <string name="keahlian1">- Lorem Ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1</string>
-    <string name="keahlian2">- Lorem Ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2</string>
+    <string name="keahlian">- Bahasa Pemrograman Web (HTML, CSS, JavaScript)\n- Pengembangan Server dan Basis Data\n- Desain Responsif\n- Keamanan dan Kinerja\n- Debugging\n- Pemahaman SEO\n- Manajemen Proyek
+</string>
+    <string name="keahlian1">- Pengembangan Aplikasi Android\n- Bahasa Pemrograman (Kotlin, Java, dll.)\n- Android SDK\n- Pemecahan Masalah\n- Pemahaman UI/UX\n- Kemampuan Kolaborasi
+</string>
+    <string name="keahlian2">- Statistik\n- Pemrograman dan Analisis Data (Python, R, SQL)\n- Algoritma Pembelajaran Mesin\n- Pemahaman Bisnis\n- Preprocessing Data\n- Visualisasi Data\n- Eksplorasi Data
+</string>
 
 
     <!--    Berita-->
-    <string name="deskripsiBerita">A list view is an adapter view that does not know the details, such as type and contents, of the views it contains.
-        Instead list view requests views on demand from a ListAdapter as needed, such as to display new views as the
-        user scrolls up or down. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide.</string>
-    <string name="deskripsiBerita1">A list view is an adapter view that does not know the details, such as type and contents, of the views it contains.
-        Instead list view requests views on demand from a ListAdapter as needed, such as to display new views as the
-        user scrolls up or down. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide.</string>
-    <string name="deskripsiBerita2">A list view is an adapter view that does not know the details, such as type and contents, of the views it contains.
-        Instead list view requests views on demand from a ListAdapter as needed, such as to display new views as the
-        user scrolls up or down. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
-        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide. For a simple example, see the discussion of filling an adapter view
-        with text in the Layouts guide.</string>
+    <string name="judulberita">“Survei: Permintaan Teknologi 5G AND AI Meningkat dari Pelaku Industri”</string>
+    <string name="judulberita1">“10 Pekerjaan Bidang Teknologi Paling Dibutuhkan sampai 2027”</string>
+    <string name="judulberita2">“3 Jenis Aplikasi yang Mampu Memanfaatkan Model dari OpenAI”</string>
+    <string name="deskripsiBerita">Indonesia masih menghadapi berbagai tantangan dalam aspek perkembangan digital contohnya akses internet yang belum merata. Speedtest® Global IndexTM per September 2023, rata-rata kecepatan unduh di Indonesia masih lambat dan berada di peringkat 121. Menanggapi hal tersebut, Asosiasi IOT Indonesia (ASIOTI) menjalin kerja sama dengan Bisnis Indonesia Intelligence Unit (BIIU) untuk meluncurkan hasil survei yang melibatkan 20 CEO AND CTO dari 11 industri vertikal. </string>
+    <string name="deskripsiBerita1">KOMPAS.com - Ada 10 pekerjaan di bidang teknologi baru yang paling dibutuhkan hingga tahun 2027. Ada setidaknya 10 pekerjaan bidang teknologi paling dibutuhkan berdasarkan World Economic Forum. Dilansir dari akun Instagram Schoters Indonesia, Selasa (15/8/2023) membagikan informasi tentang 10 pekerjaan bidang teknologi yang dibutuhkan hingga 2027 serta informasi jurusan dan kampus top dunia yang bisa kamu pilih. Calon mahasiswa yang ingin kuliah di luar negeri namun masih belum ada gambaran memilih jurusan apa dan kampusnya, bisa menjadikan informasi ini sebagai bahan pertimbangan dalam menentukan jurusan kuliah beserta kampusnya.</string>
+    <string name="deskripsiBerita2">Masih ingat ketika ChatGPT mulai dikenal masyarakat luas pada awal 2023? Chatbot viral pada kala itu seolah bisa menjawab semua pertanyaan yang dilontarkan, mulai dari membuat resep, merancang kode untuk situs, hingga menulis lagu. Beberapa bulan kemudian, tepatnya pada tanggal 6 Juli 2023, OpenAI mengumumkan bahwa API (application programming interface) GPT-4 mulai dirilis ke publik. Peluncuran API ke masyarakat luas membuat perkembangan AI makin cepat dengan munculnya berbagai chatbot yang memanfaatkan API dari OpenAI. Beberapa di antaranya adalah KoalaChat, YouChat, dan Perplexity yang menggunakan model ChatGPT. Namun, tahukah kamu bahwa ada jenis aplikasi lain yang mampu memanfaatkan model AI ini? </string>
 
-    <string name="sumber">https://fiqihardiansyah.github.io</string>
-    <string name="sumber1">https://github.com/dimasnoufal/dimasnoufal</string>
-    <string name="sumber2">https://discord.com/invite/tuPcvHXv</string>
+    <string name="sumber">https://www.idntimes.com/tech/trend/rifki-wuda-sudirman/survei-permintaan-teknologi-5g-ai-meningkat-dari-pelaku-industri</string>
+    <string name="sumber1">https://edukasi.kompas.com/read/2023/08/16/071000071/10-pekerjaan-bidang-teknologi-paling-dibutuhkan-sampai-2027</string>
+    <string name="sumber2">https://www.idntimes.com/tech/trend/yohan-1021/aplikasi-memanfaatkan-model-openai-c1c2</string>
 
 
     <string name="link">https://discord.com/invite/tuPcvHXv</string>
+
+<!--    konsultasi-->
+    <string name="deskripsi_konsultasi">Ahli di Bidang Data Science: Berfokus pada machine learning dan analisis data, memiliki pengetahuan yang luas dalam pengolahan data.\n\nPengalaman Kerja:\n
+     - 3 tahun sebagai Data Scientist di Data Insights Ltd., melakukan penelitian dan pengembangan model machine learning untuk insight bisnis.\n
+     - 2 tahun sebagai Research Analyst di Analytics Innovate, menganalisis data untuk mengidentifikasi tren dan pola yang relevan. </string>
+    <string name="deskripsi_konsultasi_1">Ahli di Bidang Android: Memiliki keahlian dalam pengembangan aplikasi mobile untuk platform Android.\n\n
+Pengalaman Kerja:\n
+     - 2 tahun sebagai Android Developer di AppTech Innovations, terlibat dalam pengembangan aplikasi mobile untuk klien-klien berbeda.\n
+     - 1 tahun sebagai Software Engineer di Mobile Solutions Co., fokus pada pengembangan aplikasi berbasis Android.
+</string>
+    <string name="deskripsi_konsultasi_2">Ahli di Bidang Website: Fokus pada pengembangan front-end. Memiliki keahlian dalam HTML, CSS, dan JavaScript.\n\n
+Pengalaman Kerja:\n
+     - 2 tahun sebagai Front-end Developer di XYZ Web Solutions, bertanggung jawab atas pembuatan antarmuka pengguna yang responsif dan menarik.\n
+     - 1 tahun sebagai UI/UX Designer di ABC Digital Agency, berfokus pada desain tata letak dan pengalaman pengguna.
+</string>
+
+<!--    Learning-->
+    <string name="deskripsiLearning">Data scientist adalah ahli dalam menganalisis dan menafsirkan data. Seorang Data Scientist menggunakan berbagai alat dan teknik seperti pemrosesan data, statistik, machine learning, dan kecerdasan buatan untuk mengeksplorasi dan menarik wawasan dari data. Tugas mereka meliputi pengumpulan data, membersihkan data yang tidak lengkap atau tidak akurat, menerapkan model statistik atau machine learning untuk membuat prediksi atau analisis, dan menyajikan hasil secara bermanfaat bagi perusahaan atau organisasi. Anda yang ertarik dan ingin mendalami fokus bidang Data Scientist ini dapat mengambil pelatihan di Dicoding.
+</string>
+    <string name="deskripsiGoogle">Seorang Android Developer merupakan pengembang yang mengkhususkan diri dalam membangun aplikasi untuk platform Android. Mereka memiliki pemahaman mendalam tentang bahasa pemrograman seperti Java atau Kotlin, serta framework Android seperti Android Studio. Tugas utama mereka adalah merancang, mengembangkan, dan memelihara aplikasi mobile yang berjalan pada sistem operasi Android. Mereka juga perlu memastikan aplikasi mereka kompatibel dengan berbagai perangkat Android yang berbeda. Anda dapat mengambil kelas gratis untuk fokus dalam bidang Android Developer secara gratis dan dapat diakses di Google for Developers.
+</string>
+    <string name="deskripsiLearning1">Front-end developer berfokus pada pengembangan bagian dari sebuah aplikasi atau situs web yang dapat dilihat dan diakses oleh pengguna. Seorang Front-End Web Developer bekerja dengan bahasa pemrograman seperti HTML, CSS, dan JavaScript untuk membuat antarmuka pengguna yang menarik dan fungsional. Mereka bertanggung jawab untuk membuat desain web responsif, interaktif, dan ramah pengguna. Kemampuan untuk berkolaborasi dengan desainer UI/UX sangatlah penting bagi front-end developer. Anda yang ertarik dan ingin mendalami fokus bidang Front-End ini dapat mengambil pelatihan di Dicoding.
+</string>
+
+    <string name="linkDicoding">https://www.dicoding.com/learningpaths/60</string>
+    <string name="linkGoogle">https://developer.android.com/studio?hl=id</string>
+    <string name="linkDicoding1">https://www.dicoding.com/learningpaths/22</string>
 </resources>
