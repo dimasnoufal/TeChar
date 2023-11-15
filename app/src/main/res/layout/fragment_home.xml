@@ -81,6 +81,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_it_career"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_weight="3"
@@ -107,6 +108,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_learning_hub"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_weight="3"
@@ -168,6 +170,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_news"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_weight="3"
@@ -194,6 +197,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_discus"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_weight="3"
@@ -393,7 +397,7 @@
                             android:textSize="15sp" />
                     </RelativeLayout>
                     <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/rvberita"
+                        android:id="@+id/rvberitab"
                         android:layout_marginTop="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"/>
