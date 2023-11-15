@@ -9,6 +9,7 @@
 
     <ImageView
         android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
         android:id="@+id/image_karir"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -67,6 +68,7 @@
             android:id="@+id/deskripsi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
             android:text="Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf."
             android:textSize="20sp"/>
 

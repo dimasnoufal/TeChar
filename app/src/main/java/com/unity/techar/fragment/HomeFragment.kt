@@ -14,12 +14,16 @@ import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 import com.unity.techar.R
-import com.unity.techar.adapter.BeritaClass
+import com.unity.techar.berita.BeritaClass
+import com.unity.techar.berita.BeritaActivity
+import com.unity.techar.detail.DetailBeritaActivity
 import com.unity.techar.detail.DetailKarirActivity
-import com.unity.techar.karir.BeritaAdapter
+import com.unity.techar.discus.DiscusActivity
+import com.unity.techar.adapter.BeritaAdapterFragment
 import com.unity.techar.karir.KarirActivity
 import com.unity.techar.karir.KarirAdapter
 import com.unity.techar.karir.KarirClass
+import com.unity.techar.learning_hub.LearningActivity
 import com.unity.techar.quiz_coding.WelcomeActivity
 import com.unity.techar.tes_kepribadian.BeginActivity
 
@@ -27,9 +31,11 @@ class HomeFragment : Fragment() {
 
     private lateinit var imageslider: ImageSlider
     private lateinit var Skarir: TextView
+    private lateinit var SBerita: TextView
     private lateinit var recyclerView: RecyclerView
     private lateinit var karirList: ArrayList<KarirClass>
     lateinit var myAdapter: KarirAdapter
+    lateinit var bAdapter: BeritaAdapterFragment
     lateinit var gambarList:Array<Int>
     lateinit var namaList:Array<String>
     lateinit var keahlianList:Array<String>
@@ -43,9 +49,17 @@ class HomeFragment : Fragment() {
     lateinit var gambarBerita:Array<Int>
     lateinit var namaBerita:Array<String>
     lateinit var deskripsiBerita:Array<String>
+    lateinit var detailGambarB:Array<Int>
+    lateinit var authorBList:Array<String>
+    lateinit var sumberBList:Array<String>
+    lateinit var tanggalBList:Array<String>
 
     private lateinit var CvCodeQuiz: CardView
     private lateinit var CvPersonality: CardView
+    private lateinit var cvDiscus: CardView
+    private lateinit var cvItCareer: CardView
+    private lateinit var cvNews : CardView
+    private lateinit var cvLearningHub: CardView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,6 +74,10 @@ class HomeFragment : Fragment() {
 
         CvCodeQuiz = view.findViewById(R.id.cv_code_quiz)
         CvPersonality = view.findViewById(R.id.cv_personality)
+        cvDiscus = view.findViewById(R.id.cv_discus)
+        cvItCareer = view.findViewById(R.id.cv_it_career)
+        cvNews = view.findViewById(R.id.cv_news)
+        cvLearningHub = view.findViewById(R.id.cv_learning_hub)
 
         CvCodeQuiz.setOnClickListener {
             startActivity(Intent(requireActivity(), WelcomeActivity::class.java))
@@ -67,6 +85,22 @@ class HomeFragment : Fragment() {
 
         CvPersonality.setOnClickListener {
             startActivity(Intent(requireActivity(), BeginActivity::class.java))
+        }
+
+        cvDiscus.setOnClickListener {
+            startActivity(Intent(requireActivity(), DiscusActivity::class.java))
+        }
+
+        cvItCareer.setOnClickListener {
+            startActivity(Intent(requireActivity(), KarirActivity::class.java))
+        }
+
+        cvNews.setOnClickListener {
+            startActivity(Intent(requireActivity(), BeritaActivity::class.java))
+        }
+
+        cvLearningHub.setOnClickListener {
+            startActivity(Intent(requireActivity(), LearningActivity::class.java))
         }
 
 //        Karir
@@ -137,27 +171,77 @@ class HomeFragment : Fragment() {
             "Lorem",
             "Lorem")
 
+
         deskripsiBerita = arrayOf(
-            "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
+            getString(R.string.deskripsiBerita),
             "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
             "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
             "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
             "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.",
             "Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.")
 
-        recyclerViewb = view.findViewById(R.id.rvberita)
+        detailGambarB = arrayOf(
+            R.drawable.banner_1,
+            R.drawable.banner_2,
+            R.drawable.banner_3,
+            R.drawable.banner_1,
+            R.drawable.banner_2,
+            R.drawable.banner_3,
+        )
+        tanggalBList = arrayOf(
+            "17-November-2023",
+            "17-November-2023",
+            "17-November-2023",
+            "17-November-2023",
+            "17-November-2023",
+            "17-November-2023",
+        )
+        authorBList = arrayOf(
+            "Lorem",
+            "Lorem",
+            "Lorem",
+            "Lorem",
+            "Lorem",
+            "Lorem",
+        )
+
+
+
+        sumberBList = arrayOf(
+            getString(R.string.sumber),
+            getString(R.string.sumber1),
+            getString(R.string.sumber2),
+            getString(R.string.sumber),
+            getString(R.string.sumber1),
+            getString(R.string.sumber2),
+        )
+
+        recyclerViewb = view.findViewById(R.id.rvberitab)
         recyclerViewb.layoutManager = LinearLayoutManager(requireActivity(), LinearLayoutManager.HORIZONTAL ,false)
         recyclerViewb.setHasFixedSize(true)
 
         beritaList = arrayListOf<BeritaClass>()
         getDataBerita()
+        bAdapter = BeritaAdapterFragment(beritaList)
+        recyclerViewb.adapter = bAdapter
+
+        bAdapter.onItemClick = {
+            val intentB = Intent(requireActivity(), DetailBeritaActivity::class.java)
+            intentB.putExtra("berita", it)
+            startActivity(intentB)
+        }
 
 
         Skarir = view.findViewById(R.id.selenkapnyakarir)
+        SBerita = view.findViewById(R.id.selenkapnyaberita)
         imageslider = view.findViewById(R.id.image_slider)
 
         Skarir.setOnClickListener{
             startActivity(Intent(requireActivity(), KarirActivity::class.java))
+        }
+
+        SBerita.setOnClickListener{
+            startActivity(Intent(requireActivity(), BeritaActivity::class.java))
         }
 
         val imageList = ArrayList<SlideModel>()
@@ -178,9 +262,9 @@ class HomeFragment : Fragment() {
 
     private fun getDataBerita(){
         for (i in gambarBerita.indices){
-            val beritaClass = BeritaClass(gambarBerita[i], namaBerita[i], deskripsiBerita[1])
+            val beritaClass = BeritaClass(gambarBerita[i], namaBerita[i], tanggalBList[1], detailGambarB[i], authorBList[i], deskripsiBerita[i], sumberBList[i])
             beritaList.add(beritaClass)
         }
-        recyclerViewb.adapter = BeritaAdapter(beritaList)
+        recyclerViewb.adapter = BeritaAdapterFragment(beritaList)
     }
 }

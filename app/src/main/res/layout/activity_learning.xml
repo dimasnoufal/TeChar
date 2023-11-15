@@ -6,18 +6,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    tools:context=".karir.KarirActivity">
+    tools:context=".learning_hub.LearningActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pengetahuan Jenis karir"
+        android:text="Pelatihan karir"
         android:textStyle="bold"
         android:textSize="25sp"
         android:textAlignment="center"/>
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvkarir"
+        android:id="@+id/rvLearning"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.unity.techar.karir
+package com.unity.techar.learning_hub
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,21 +8,20 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.unity.techar.R
 
-class KarirAdapter(private val karirList: ArrayList<KarirClass>): RecyclerView.Adapter<KarirAdapter.ViewHolderClass>() {
+class LearningAdapter(private val learningList: ArrayList<LearningClass>) : RecyclerView.Adapter<LearningAdapter.ViewHolderClass>() {
+    var onItemClick: ((LearningClass) -> Unit)? = null
 
-
-    var onItemClick: ((KarirClass) -> Unit)? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderClass {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_karir, parent, false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_learning, parent, false)
         return  ViewHolderClass(itemView)
     }
 
 
     override fun onBindViewHolder(holder: ViewHolderClass, position: Int) {
-        val currentItem = karirList[position]
+        val currentItem = learningList[position]
         holder.rvImage.setImageResource(currentItem.gambar)
         holder.rvNama.text = currentItem.nama
-        holder.rvKeahlian.text = currentItem.keahlian
+        holder.rvAhli.text = currentItem.ahli
 
         holder.itemView.setOnClickListener{
             onItemClick?.invoke(currentItem)
@@ -30,12 +29,13 @@ class KarirAdapter(private val karirList: ArrayList<KarirClass>): RecyclerView.A
     }
 
     override fun getItemCount(): Int {
-        return karirList.size
+        return learningList.size
     }
 
     class ViewHolderClass(itemView: View): RecyclerView.ViewHolder(itemView){
-        val rvImage:ImageView = itemView.findViewById(R.id.listImageKarir)
-        val rvNama:TextView = itemView.findViewById(R.id.listNameKarir)
-        val rvKeahlian:TextView = itemView.findViewById(R.id.listKeahlianKarir)
+        val rvImage: ImageView = itemView.findViewById(R.id.listImageLearning)
+        val rvNama: TextView = itemView.findViewById(R.id.listNameLearning)
+        val rvAhli: TextView = itemView.findViewById(R.id.listAhliLearning)
     }
+
 }

@@ -5,6 +5,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--    Karir-->
     <string name="detailDeskripsi">A list view is an adapter view that does not know the details, such as type and contents, of the views it contains.
         Instead list view requests views on demand from a ListAdapter as needed, such as to display new views as the
         user scrolls up or down. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
@@ -37,4 +38,38 @@
     <string name="keahlian">- Lorem Ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum \n- Lorem ipsum</string>
     <string name="keahlian1">- Lorem Ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1 \n- Lorem ipsum1</string>
     <string name="keahlian2">- Lorem Ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2 \n- Lorem ipsum2</string>
+
+
+    <!--    Berita-->
+    <string name="deskripsiBerita">A list view is an adapter view that does not know the details, such as type and contents, of the views it contains.
+        Instead list view requests views on demand from a ListAdapter as needed, such as to display new views as the
+        user scrolls up or down. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
+        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
+        with text in the Layouts guide. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
+        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
+        with text in the Layouts guide. For a simple example, see the discussion of filling an adapter view
+        with text in the Layouts guide.</string>
+    <string name="deskripsiBerita1">A list view is an adapter view that does not know the details, such as type and contents, of the views it contains.
+        Instead list view requests views on demand from a ListAdapter as needed, such as to display new views as the
+        user scrolls up or down. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
+        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
+        with text in the Layouts guide. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
+        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
+        with text in the Layouts guide. For a simple example, see the discussion of filling an adapter view
+        with text in the Layouts guide.</string>
+    <string name="deskripsiBerita2">A list view is an adapter view that does not know the details, such as type and contents, of the views it contains.
+        Instead list view requests views on demand from a ListAdapter as needed, such as to display new views as the
+        user scrolls up or down. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
+        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
+        with text in the Layouts guide. In order to display items in the list, call setAdapter(android.widget.ListAdapter)
+        to associate an adapter with the list. For a simple example, see the discussion of filling an adapter view
+        with text in the Layouts guide. For a simple example, see the discussion of filling an adapter view
+        with text in the Layouts guide.</string>
+
+    <string name="sumber">https://fiqihardiansyah.github.io</string>
+    <string name="sumber1">https://github.com/dimasnoufal/dimasnoufal</string>
+    <string name="sumber2">https://discord.com/invite/tuPcvHXv</string>
+
+
+    <string name="link">https://discord.com/invite/tuPcvHXv</string>
 </resources>
