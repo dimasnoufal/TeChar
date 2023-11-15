@@ -62,9 +62,9 @@ class KonsultasiFragment : Fragment() {
             R.mipmap.ic_launcher)
 
         namaList = arrayOf(
-            "zzz",
-            "zzz",
-            "zzz")
+            "A",
+            "C",
+            "E")
 
         bidangList = arrayOf(
             "Lorem",
@@ -84,7 +84,6 @@ class KonsultasiFragment : Fragment() {
             getString(R.string.link))
         recyclerView = view.findViewById(R.id.rvRKonsul)
         searchView = view.findViewById(R.id.search)
-        searchView.visibility = View.GONE //Search GONE
         txtPencarian = view.findViewById(R.id.pencarian)
         txtRekomendasi = view.findViewById(R.id.rekomendasi)
         txtSemua = view.findViewById(R.id.semua)
@@ -93,6 +92,7 @@ class KonsultasiFragment : Fragment() {
         konsultasiList = arrayListOf<KonsultasiClass>()
         searchList = arrayListOf<KonsultasiClass>()
         getData()
+//        klik rekomendasi
         myAdapter = KonsultasiAdapter(konsultasiList)
         recyclerView.adapter = myAdapter
 
@@ -103,6 +103,7 @@ class KonsultasiFragment : Fragment() {
         }
 
 
+//        mencari
         searchView.clearFocus()
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -155,12 +156,12 @@ class KonsultasiFragment : Fragment() {
             R.mipmap.ic_launcher)
 
         namaListS = arrayOf(
-            "ggh",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem")
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F")
 
         bidangListS = arrayOf(
             "Lorem",
@@ -195,7 +196,8 @@ class KonsultasiFragment : Fragment() {
         recyclerViewS.setHasFixedSize(true)
         konsultasiListS = arrayListOf<KonsultasiClass>()
         getDataS()
-        myAdapter = KonsultasiAdapter(konsultasiListS)
+//        Klik Semua
+        myAdapter = KonsultasiAdapter(searchList)
         recyclerViewS.adapter = myAdapter
 
         myAdapter.onItemClick = {
