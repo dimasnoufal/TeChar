@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.unity.techar.R
 
-class KarirAdapter(private  val karirList: ArrayList<KarirClass>): RecyclerView.Adapter<KarirAdapter.ViewHolderClass>() {
+class KarirAdapter(private val karirList: ArrayList<KarirClass>): RecyclerView.Adapter<KarirAdapter.ViewHolderClass>() {
 
 
     var onItemClick: ((KarirClass) -> Unit)? = null

@@ -15,6 +15,7 @@ import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 import com.unity.techar.R
 import com.unity.techar.adapter.BeritaClass
+import com.unity.techar.berita.BeritaActivity
 import com.unity.techar.detail.DetailKarirActivity
 import com.unity.techar.karir.BeritaAdapter
 import com.unity.techar.karir.KarirActivity
@@ -27,6 +28,7 @@ class HomeFragment : Fragment() {
 
     private lateinit var imageslider: ImageSlider
     private lateinit var Skarir: TextView
+    private lateinit var SBerita: TextView
     private lateinit var recyclerView: RecyclerView
     private lateinit var karirList: ArrayList<KarirClass>
     lateinit var myAdapter: KarirAdapter
@@ -154,10 +156,15 @@ class HomeFragment : Fragment() {
 
 
         Skarir = view.findViewById(R.id.selenkapnyakarir)
+        SBerita = view.findViewById(R.id.selenkapnyaberita)
         imageslider = view.findViewById(R.id.image_slider)
 
         Skarir.setOnClickListener{
             startActivity(Intent(requireActivity(), KarirActivity::class.java))
+        }
+
+        SBerita.setOnClickListener{
+            startActivity(Intent(requireActivity(), BeritaActivity::class.java))
         }
 
         val imageList = ArrayList<SlideModel>()

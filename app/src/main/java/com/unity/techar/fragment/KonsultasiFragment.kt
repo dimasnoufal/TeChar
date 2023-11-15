@@ -1,6 +1,7 @@
 package com.unity.techar.fragment
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,6 +14,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.unity.techar.R
 import com.unity.techar.adapter.KonsultasiAdapter
 import com.unity.techar.adapter.KonsultasiClass
+import com.unity.techar.detail.DetailKarirActivity
+import com.unity.techar.detail.DetailKonsultasiActivity
+import com.unity.techar.karir.KarirAdapter
 import java.util.Locale
 
 class KonsultasiFragment : Fragment() {
@@ -20,6 +24,7 @@ class KonsultasiFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var konsultasiList: ArrayList<KonsultasiClass>
     private lateinit var konsultasiListS: ArrayList<KonsultasiClass>
+    lateinit var myAdapter: KonsultasiAdapter
     lateinit var gambarList:Array<Int>
     lateinit var namaList:Array<String>
     lateinit var bidangList:Array<String>
@@ -32,6 +37,9 @@ class KonsultasiFragment : Fragment() {
     lateinit var gambarListS:Array<Int>
     lateinit var namaListS:Array<String>
     lateinit var bidangListS:Array<String>
+    lateinit var detailgambarK:Array<Int>
+    lateinit var deskrpsiK:Array<String>
+    lateinit var linkK:Array<String>
 
     private lateinit var searchView: SearchView
     private lateinit var searchList: ArrayList<KonsultasiClass>
@@ -54,14 +62,26 @@ class KonsultasiFragment : Fragment() {
             R.mipmap.ic_launcher)
 
         namaList = arrayOf(
-            "Ipsum",
-            "Lorem",
-            "Lorem")
+            "A",
+            "C",
+            "E")
 
         bidangList = arrayOf(
             "Lorem",
             "Lorem",
             "Lorem")
+        detailgambarK = arrayOf(
+            R.mipmap.ic_launcher,
+            R.mipmap.ic_launcher,
+            R.mipmap.ic_launcher)
+        deskrpsiK = arrayOf(
+            "Lorem",
+            "Lorem",
+            "Lorem")
+        linkK = arrayOf(
+            getString(R.string.link),
+            getString(R.string.link),
+            getString(R.string.link))
         recyclerView = view.findViewById(R.id.rvRKonsul)
         searchView = view.findViewById(R.id.search)
         txtPencarian = view.findViewById(R.id.pencarian)
@@ -72,7 +92,18 @@ class KonsultasiFragment : Fragment() {
         konsultasiList = arrayListOf<KonsultasiClass>()
         searchList = arrayListOf<KonsultasiClass>()
         getData()
+//        klik rekomendasi
+        myAdapter = KonsultasiAdapter(konsultasiList)
+        recyclerView.adapter = myAdapter
 
+        myAdapter.onItemClick = {
+            val intent = Intent(requireActivity(), DetailKonsultasiActivity::class.java)
+            intent.putExtra("konsultasi", it)
+            startActivity(intent)
+        }
+
+
+//        mencari
         searchView.clearFocus()
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -85,29 +116,29 @@ class KonsultasiFragment : Fragment() {
                 searchList.clear()
                 val searchText = newText!!.toLowerCase(Locale.getDefault())
                 if(searchText.isNotEmpty()){
-                    konsultasiList.forEach{
+                    konsultasiListS.forEach{
                         if(it.namaK.toLowerCase(Locale.getDefault()).contains(searchText)){
                             searchList.add(it)
-                            recyclerViewS.visibility = View.GONE
+                            recyclerView.visibility = View.GONE
                             txtPencarian.visibility = View.VISIBLE
                             txtRekomendasi.visibility = View.GONE
                             txtSemua.visibility = View.GONE
                         }else{
-                            recyclerViewS.visibility = View.GONE
+                            recyclerView.visibility = View.GONE
                             txtPencarian.visibility = View.VISIBLE
                             txtRekomendasi.visibility = View.GONE
                             txtSemua.visibility = View.GONE
                         }
                     }
-                    recyclerView.adapter!!.notifyDataSetChanged()
+                    recyclerViewS.adapter!!.notifyDataSetChanged()
                 }else{
                     searchList.clear()
-                    searchList.addAll(konsultasiList)
-                    recyclerViewS.visibility = View.VISIBLE
+                    searchList.addAll(konsultasiListS)
+                    recyclerView.visibility = View.VISIBLE
                     txtPencarian.visibility = View.GONE
                     txtRekomendasi.visibility = View.VISIBLE
                     txtSemua.visibility = View.VISIBLE
-                    recyclerView.adapter!!.notifyDataSetChanged()
+                    recyclerViewS.adapter!!.notifyDataSetChanged()
                 }
                 return false
             }
@@ -125,12 +156,12 @@ class KonsultasiFragment : Fragment() {
             R.mipmap.ic_launcher)
 
         namaListS = arrayOf(
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem",
-            "Lorem")
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F")
 
         bidangListS = arrayOf(
             "Lorem",
@@ -139,27 +170,58 @@ class KonsultasiFragment : Fragment() {
             "Lorem",
             "Lorem",
             "Lorem")
+        detailgambarK = arrayOf(
+            R.mipmap.ic_launcher,
+            R.mipmap.ic_launcher,
+            R.mipmap.ic_launcher,
+            R.mipmap.ic_launcher,
+            R.mipmap.ic_launcher,
+            R.mipmap.ic_launcher)
+        deskrpsiK = arrayOf(
+            "Lorem",
+            "Lorem",
+            "Lorem",
+            "Lorem",
+            "Lorem",
+            "Lorem")
+        linkK = arrayOf(
+            getString(R.string.link),
+            getString(R.string.link),
+            getString(R.string.link),
+            getString(R.string.link),
+            getString(R.string.link),
+            getString(R.string.link))
         recyclerViewS = view.findViewById(R.id.rvSKonsul)
         recyclerViewS.layoutManager = LinearLayoutManager(requireActivity())
         recyclerViewS.setHasFixedSize(true)
         konsultasiListS = arrayListOf<KonsultasiClass>()
         getDataS()
+//        Klik Semua
+        myAdapter = KonsultasiAdapter(searchList)
+        recyclerViewS.adapter = myAdapter
+
+        myAdapter.onItemClick = {
+            val intent = Intent(requireActivity(), DetailKonsultasiActivity::class.java)
+            intent.putExtra("konsultasi", it)
+            startActivity(intent)
+        }
     }
 
     private fun getData(){
         for (i in gambarList.indices){
-            val konsultasiClass = KonsultasiClass(gambarList[i], namaList[i], bidangList[i])
+            val konsultasiClass = KonsultasiClass(gambarList[i], namaList[i], bidangList[i],detailgambarK[i],deskrpsiK[i], linkK[i])
             konsultasiList.add(konsultasiClass)
         }
-        searchList.addAll(konsultasiList)
-        recyclerView.adapter = KonsultasiAdapter(searchList)
+//        searchList.addAll(konsultasiList)
+        recyclerView.adapter = KonsultasiAdapter(konsultasiList)
     }
 
     private fun getDataS(){
         for (i in gambarListS.indices){
-            val konsultasiClass = KonsultasiClass(gambarListS[i], namaListS[i], bidangListS[i])
+            val konsultasiClass = KonsultasiClass(gambarListS[i], namaListS[i], bidangListS[i],detailgambarK[i],deskrpsiK[i], linkK[i])
             konsultasiListS.add(konsultasiClass)
         }
-        recyclerViewS.adapter = KonsultasiAdapter(konsultasiListS)
+        searchList.addAll(konsultasiListS)
+        recyclerViewS.adapter = KonsultasiAdapter(searchList)
     }
 }
