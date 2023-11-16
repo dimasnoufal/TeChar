@@ -52,16 +52,16 @@ class KarirActivity : AppCompatActivity() {
         )
 
         keahlianList = arrayOf(
-            "Engeneering",
-            "Engeneering",
-            "Engeneering",
-            "Engeneering",
-            "Engeneering",
-            "Engeneering",
-            "Engeneering",
-            "Engeneering",
-            "Engeneering",
-            "Engeneering"
+            "Engineering",
+            "Engineering",
+            "Engineering",
+            "Engineering",
+            "Engineering",
+            "Engineering",
+            "Engineering",
+            "Engineering",
+            "Engineering",
+            "Engineering",
         )
         gambarDetail = arrayOf(
             R.drawable.ilustaris_career_1,

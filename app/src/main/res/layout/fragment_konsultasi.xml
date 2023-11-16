@@ -50,7 +50,7 @@
             android:id="@+id/rekomendasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rekomendasi Konsultasi" />
+            android:text="Rekomendasi Konsultan" />
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvRKonsul"
                 android:layout_marginTop="20dp"
@@ -63,7 +63,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Semua Konsultasi" />
+                android:text="Semua Konsultan" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvSKonsul"
