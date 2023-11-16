@@ -43,8 +43,9 @@
 
     <TextView
         android:id="@+id/deskripsikonsultasi"
-        android:text="Diskusi dan Komunitas: Tak ada yang lebih memperkaya daripada berbagi pemikiran dan pandangan. Temukan tempat untuk berdiskusi, bertukar ide, dan terhubung dengan komunitas yang peduli serta memiliki minat serupa. Perluaslah jaringan melalui komunitas TeChar!"
+        android:text="Tak ada yang lebih memperkaya daripada berbagi pemikiran dan pandangan. Temukan tempat untuk berdiskusi, bertukar ide, dan terhubung dengan komunitas yang peduli serta memiliki minat serupa. Perluaslah jaringan melalui komunitas TeChar!"
         android:textSize="20sp"
+        android:justificationMode="inter_word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
