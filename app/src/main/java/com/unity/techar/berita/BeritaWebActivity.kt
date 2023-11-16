@@ -15,14 +15,13 @@ class BeritaWebActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_berita_web)
+        var web = intent.getStringExtra(EXTRA_TEXT)
+        berita = findViewById(R.id.beritawebs)
+        berita.webViewClient = WebViewClient()
+        berita.loadUrl(web.toString())
 
         val webSettings = berita.settings
         webSettings.javaScriptEnabled = true
         webSettings.domStorageEnabled = true
-
-        var web = intent.getStringExtra(EXTRA_TEXT)
-        berita = findViewById(R.id.beritaweb)
-        berita.webViewClient = WebViewClient()
-        berita.loadUrl(web.toString())
     }
 }
