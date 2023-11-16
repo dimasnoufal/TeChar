@@ -240,7 +240,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_toLeftOf="@id/selenkapnyakarir"
-                            android:text="Recomendation career"
+                            android:text="Recommendation career"
                             android:textStyle="bold"
                             android:textSize="18sp" />
 
@@ -253,112 +253,7 @@
                             android:textColor="@color/blue"
                             android:textSize="14sp" />
                     </RelativeLayout>
-                    <!--            karir pertama-->
-<!--                    <androidx.cardview.widget.CardView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginVertical="10dp"-->
-<!--                        app:cardCornerRadius="20dp"-->
-<!--                        app:cardElevation="8dp">-->
 
-<!--                        <RelativeLayout-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="wrap_content">-->
-
-<!--                            <com.google.android.material.imageview.ShapeableImageView-->
-<!--                                android:id="@+id/listImageKarir"-->
-<!--                                android:layout_width="60dp"-->
-<!--                                android:layout_height="60dp"-->
-<!--                                android:layout_marginStart="10dp"-->
-<!--                                android:layout_marginTop="10dp"-->
-<!--                                android:layout_marginBottom="10dp"-->
-<!--                                android:scaleType="centerCrop"-->
-<!--                                android:src="@mipmap/ic_launcher"-->
-<!--                                app:shapeAppearanceOverlay="@style/roundImage" />-->
-
-<!--                            <TextView-->
-<!--                                android:id="@+id/listNameKarir"-->
-<!--                                android:layout_width="120dp"-->
-<!--                                android:layout_height="30dp"-->
-<!--                                android:layout_marginStart="30dp"-->
-<!--                                android:layout_marginTop="25dp"-->
-<!--                                android:layout_toEndOf="@id/listImageKarir"-->
-<!--                                android:text="Lorem"-->
-<!--                                android:textStyle="bold"-->
-<!--                                android:textSize="20sp" />-->
-
-<!--                        </RelativeLayout>-->
-<!--                    </androidx.cardview.widget.CardView>-->
-<!--                    &lt;!&ndash;            Karir kedua&ndash;&gt;-->
-<!--                    <androidx.cardview.widget.CardView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginVertical="10dp"-->
-<!--                        app:cardCornerRadius="20dp"-->
-<!--                        app:cardElevation="8dp">-->
-
-<!--                        <RelativeLayout-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="wrap_content">-->
-
-<!--                            <com.google.android.material.imageview.ShapeableImageView-->
-<!--                                android:id="@+id/listImageKarir1"-->
-<!--                                android:layout_width="60dp"-->
-<!--                                android:layout_height="60dp"-->
-<!--                                android:layout_marginStart="10dp"-->
-<!--                                android:layout_marginTop="10dp"-->
-<!--                                android:layout_marginBottom="10dp"-->
-<!--                                android:scaleType="centerCrop"-->
-<!--                                android:src="@mipmap/ic_launcher"-->
-<!--                                app:shapeAppearanceOverlay="@style/roundImage" />-->
-
-<!--                            <TextView-->
-<!--                                android:id="@+id/listNameKarir1"-->
-<!--                                android:layout_width="120dp"-->
-<!--                                android:layout_height="30dp"-->
-<!--                                android:layout_marginStart="30dp"-->
-<!--                                android:layout_marginTop="25dp"-->
-<!--                                android:layout_toEndOf="@id/listImageKarir1"-->
-<!--                                android:text="Lorem"-->
-<!--                                android:textStyle="bold"-->
-<!--                                android:textSize="20sp" />-->
-<!--                        </RelativeLayout>-->
-<!--                    </androidx.cardview.widget.CardView>-->
-<!--                    &lt;!&ndash;            karir ketiga&ndash;&gt;-->
-<!--                    <androidx.cardview.widget.CardView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginVertical="10dp"-->
-<!--                        app:cardCornerRadius="20dp"-->
-<!--                        app:cardElevation="8dp">-->
-
-<!--                        <RelativeLayout-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="wrap_content">-->
-
-<!--                            <com.google.android.material.imageview.ShapeableImageView-->
-<!--                                android:id="@+id/listImageKarir2"-->
-<!--                                android:layout_width="60dp"-->
-<!--                                android:layout_height="60dp"-->
-<!--                                android:layout_marginStart="10dp"-->
-<!--                                android:layout_marginTop="10dp"-->
-<!--                                android:layout_marginBottom="10dp"-->
-<!--                                android:scaleType="centerCrop"-->
-<!--                                android:src="@mipmap/ic_launcher"-->
-<!--                                app:shapeAppearanceOverlay="@style/roundImage" />-->
-
-<!--                            <TextView-->
-<!--                                android:id="@+id/listNameKarir2"-->
-<!--                                android:layout_width="120dp"-->
-<!--                                android:layout_height="30dp"-->
-<!--                                android:layout_marginStart="30dp"-->
-<!--                                android:layout_marginTop="25dp"-->
-<!--                                android:layout_toEndOf="@id/listImageKarir2"-->
-<!--                                android:text="Lorem"-->
-<!--                                android:textStyle="bold"-->
-<!--                                android:textSize="20sp" />-->
-<!--                        </RelativeLayout>-->
-<!--                    </androidx.cardview.widget.CardView>-->
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvkarir"
                         android:layout_marginTop="20dp"

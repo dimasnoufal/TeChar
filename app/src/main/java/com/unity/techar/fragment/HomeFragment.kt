@@ -233,7 +233,7 @@ class HomeFragment : Fragment() {
         val imageList = ArrayList<SlideModel>()
         imageList.add(SlideModel(R.drawable.banner_1))
         imageList.add(SlideModel(R.drawable.banner_2))
-        imageList.add(SlideModel(R.drawable.banner_3))
+        imageList.add(SlideModel(R.drawable.banner_4))
 
         imageslider.setImageList(imageList, ScaleTypes.CENTER_INSIDE)
     }
