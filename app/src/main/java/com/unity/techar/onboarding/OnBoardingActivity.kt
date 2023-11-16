@@ -53,19 +53,19 @@ class OnBoardingActivity : AppCompatActivity() {
         Page(
             "Ketauhi jenis kepribadian",
             R.drawable.programming_amico,
-            "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "Kenali dirimu melalui tes kepribadian yang dirancang untuk menggali potensi dan memahami diri.",
             "#FFFFFF"
         ),
         Page(
             "Dapatkan Informasi Karir dan Pelatihan bidang IT",
             R.drawable.on_boarding_2,
-            "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "Temukan karir IT yang tepat untuk anda dengan informasi dan pelatihan yang tepat",
             "#FFFFFF"
         ),
         Page(
             "Konsultasi dengan HR",
             R.drawable.on_boarding_3,
-            "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "Optimalkan potensi karir Anda dengan konsultasi HR",
             "#FFFFFF"
         )
     )
