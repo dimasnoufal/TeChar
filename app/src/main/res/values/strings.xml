@@ -37,7 +37,7 @@
 
     <string name="link">https://discord.com/invite/tuPcvHXv</string>
 
-<!--    konsultasi-->
+    <!--    konsultasi-->
     <string name="deskripsi_konsultasi">Ahli di Bidang Data Science: Berfokus pada machine learning dan analisis data, memiliki pengetahuan yang luas dalam pengolahan data.\n\nPengalaman Kerja:\n
      - 3 tahun sebagai Data Scientist di Data Insights Ltd., melakukan penelitian dan pengembangan model machine learning untuk insight bisnis.\n
      - 2 tahun sebagai Research Analyst di Analytics Innovate, menganalisis data untuk mengidentifikasi tren dan pola yang relevan. </string>
@@ -52,7 +52,7 @@ Pengalaman Kerja:\n
      - 1 tahun sebagai UI/UX Designer di ABC Digital Agency, berfokus pada desain tata letak dan pengalaman pengguna.
 </string>
 
-<!--    Learning-->
+    <!--    Learning-->
     <string name="deskripsiLearning">Data scientist adalah ahli dalam menganalisis dan menafsirkan data. Seorang Data Scientist menggunakan berbagai alat dan teknik seperti pemrosesan data, statistik, machine learning, dan kecerdasan buatan untuk mengeksplorasi dan menarik wawasan dari data. Tugas mereka meliputi pengumpulan data, membersihkan data yang tidak lengkap atau tidak akurat, menerapkan model statistik atau machine learning untuk membuat prediksi atau analisis, dan menyajikan hasil secara bermanfaat bagi perusahaan atau organisasi. Anda yang ertarik dan ingin mendalami fokus bidang Data Scientist ini dapat mengambil pelatihan di Dicoding.
 </string>
     <string name="deskripsiGoogle">Seorang Android Developer merupakan pengembang yang mengkhususkan diri dalam membangun aplikasi untuk platform Android. Mereka memiliki pemahaman mendalam tentang bahasa pemrograman seperti Java atau Kotlin, serta framework Android seperti Android Studio. Tugas utama mereka adalah merancang, mengembangkan, dan memelihara aplikasi mobile yang berjalan pada sistem operasi Android. Mereka juga perlu memastikan aplikasi mereka kompatibel dengan berbagai perangkat Android yang berbeda. Anda dapat mengambil kelas gratis untuk fokus dalam bidang Android Developer secara gratis dan dapat diakses di Google for Developers.
