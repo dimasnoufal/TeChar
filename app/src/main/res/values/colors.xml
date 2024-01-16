@@ -5,4 +5,6 @@
     <color name="blue">#4484C3</color>
     <color name="biru_mudah">#A3CBF3</color>
     <color name="abu_abu">#808080</color>
+    <color name="colorText">#464646</color>
+    <color name="colorTextBackground">#f5f5f5</color>
 </resources>
