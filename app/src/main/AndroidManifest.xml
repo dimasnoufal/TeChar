@@ -18,6 +18,15 @@
         android:theme="@style/Theme.TeChar"
         tools:targetApi="31">
         <activity
+            android:name=".ProfileKonsultanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginKonsultanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KonsultanActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChatActivity"
             android:exported="false" />
         <activity

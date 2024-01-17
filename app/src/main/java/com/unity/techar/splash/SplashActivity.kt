@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.unity.techar.KonsultanActivity
 import com.unity.techar.MainActivity
 import com.unity.techar.R
 import com.unity.techar.auth.landing.LandingActivity

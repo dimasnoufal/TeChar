@@ -6,6 +6,7 @@ import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -19,17 +20,18 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.unity.techar.databinding.ActivityChatBinding
+import com.unity.techar.databinding.ActivityKonsultanBinding
 import java.util.*
 
-class ChatActivity : AppCompatActivity() {
+class KonsultanActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityChatBinding
+    private lateinit var binding: ActivityKonsultanBinding
     private lateinit var auth: FirebaseAuth
 
     private lateinit var db: FirebaseDatabase
     private lateinit var adapter: FirebaseMessageAdapter
 
-//    private val requestNotificationPermissionLauncher = registerForActivityResult(
+    //    private val requestNotificationPermissionLauncher = registerForActivityResult(
 //        ActivityResultContracts.RequestPermission()
 //    ){
 //            isGranted: Boolean ->
@@ -47,7 +49,8 @@ class ChatActivity : AppCompatActivity() {
 //            requestNotificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
 //        }
 
-        binding = ActivityChatBinding.inflate(layoutInflater)
+
+        binding = ActivityKonsultanBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         auth = Firebase.auth
@@ -58,9 +61,19 @@ class ChatActivity : AppCompatActivity() {
 //            finish()
 //            return
 //        }
+        if (firebaseUser != null) {
+            binding.tvName.text = firebaseUser.displayName
+        } else {
+            startActivity(Intent(this, LoginKonsultanActivity::class.java))
+        }
         db = Firebase.database
 
         val messagesRef = db.reference.child(MESSAGES_CHILD)
+
+        binding.view.setOnClickListener {
+            startActivity(Intent(this, ProfileKonsultanActivity::class.java))
+            finish()
+        }
 
         binding.SendMessage.setOnClickListener {
             val friendlyMessage = Message(
