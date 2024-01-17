@@ -1,6 +1,7 @@
 package com.unity.techar.detail
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -30,7 +31,7 @@ class DetailKonsultasiActivity : AppCompatActivity() {
             namaKonsultasi.text = getData.namaK
             bidangKonsultasi.text = getData.bidangK
             deskripsiKonsultasi.text = getData.deskripsiK
-            val linkK = getData.linkK
+            val linkK = getString(R.string.link_wa)
             link = findViewById(R.id.konsul)
             link.setOnClickListener {
                 val i = Intent(this, TransaksiActivity::class.java)

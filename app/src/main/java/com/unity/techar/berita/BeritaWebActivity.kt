@@ -16,7 +16,7 @@ class BeritaWebActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_berita_web)
         var web = intent.getStringExtra(EXTRA_TEXT)
-        berita = findViewById(R.id.beritaweb)
+        berita = findViewById(R.id.beritawebs)
         berita.webViewClient = WebViewClient()
         berita.loadUrl(web.toString())
 
