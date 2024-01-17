@@ -1,4 +1,4 @@
-package com.unity.techar.auth.login
+package com.unity.techar
 
 import android.app.ProgressDialog
 import android.content.Context
@@ -7,17 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.unity.techar.LoginKonsultanActivity
-import com.unity.techar.MainActivity
-import com.unity.techar.R
 import com.unity.techar.auth.forget_password.ForgetPasswordActivity
-import com.unity.techar.auth.register.RegisterActivity
+import com.unity.techar.auth.login.LoginActivity
 import com.unity.techar.databinding.ActivityLoginBinding
-import com.unity.techar.databinding.ActivityRegisterBinding
+import com.unity.techar.databinding.ActivityLoginKonsultanBinding
 
-class LoginActivity : AppCompatActivity() {
+class LoginKonsultanActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityLoginBinding
+    private lateinit var binding : ActivityLoginKonsultanBinding
     private lateinit var progressDialog: ProgressDialog
     var firebaseAuth = FirebaseAuth.getInstance()
 
@@ -25,15 +22,15 @@ class LoginActivity : AppCompatActivity() {
         super.onStart()
 
         if (firebaseAuth.currentUser != null) {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, KonsultanActivity::class.java))
         }
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivityLoginKonsultanBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var context = this@LoginActivity
+        var context = this@LoginKonsultanActivity
         var sharedPref = context.getSharedPreferences(getString(R.string.condition_state), Context.MODE_PRIVATE)
 
         val editor = sharedPref.edit()
@@ -44,15 +41,10 @@ class LoginActivity : AppCompatActivity() {
         progressDialog.setTitle("Login")
         progressDialog.setMessage("Silahkan tunggu...")
 
-        binding.tvForgetPassword.setOnClickListener {
-            startActivity(Intent(this, ForgetPasswordActivity::class.java))
-        }
 
-        binding.btnRegister.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
-        }
-        binding.loginKonsultan.setOnClickListener {
-            startActivity(Intent(this, LoginKonsultanActivity::class.java))
+
+        binding.loginUser.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
 
@@ -73,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
         progressDialog.show()
         firebaseAuth.signInWithEmailAndPassword(email, password)
             .addOnSuccessListener {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, KonsultanActivity::class.java))
             }
             .addOnFailureListener { error ->
                 Toast.makeText(this, error.localizedMessage, Toast.LENGTH_SHORT).show()
