@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.unity.techar.R
+import com.unity.techar.TransaksiActivity
 import com.unity.techar.adapter.KonsultasiClass
 import com.unity.techar.berita.BeritaWebActivity
 import com.unity.techar.karir.KarirClass
@@ -33,13 +34,9 @@ class DetailKonsultasiActivity : AppCompatActivity() {
             val linkK = getString(R.string.link_wa)
             link = findViewById(R.id.konsul)
             link.setOnClickListener {
-//                val i = Intent(this, BeritaWebActivity::class.java)
+                val i = Intent(this, TransaksiActivity::class.java)
 //                i.putExtra(BeritaWebActivity.EXTRA_TEXT, linkK)
-//                startActivity(i)
-
-                val web = Intent(Intent.ACTION_VIEW)
-                web.setData(Uri.parse(linkK))
-                startActivity(web)
+                startActivity(i)
             }
         }
     }
