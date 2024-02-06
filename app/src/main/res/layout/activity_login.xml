@@ -10,7 +10,7 @@
         android:id="@+id/MateriaEmail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
@@ -22,10 +22,14 @@
             android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/shape_et"
             android:ems="10"
             android:hint="Email"
-            android:inputType="textEmailAddress"
+            android:fontFamily="@font/montserrat"
             android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:textColor="#B7B7B7"
+            android:textSize="14sp"
             android:textStyle="normal" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -34,11 +38,12 @@
         android:id="@+id/MateriaPassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         app:endIconMode="password_toggle"
+        app:endIconTint="#B7B7B7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MateriaEmail">
@@ -47,9 +52,13 @@
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/shape_et"
             android:hint="Password"
             android:imeOptions="actionDone"
             android:inputType="textPassword"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#B7B7B7"
+            android:textSize="14sp"
             android:textStyle="normal" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -57,11 +66,14 @@
     <Button
         android:id="@+id/btn_login"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_medium"
         android:text="Login"
+        android:background="@drawable/shape_button"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_forget_password" />
@@ -69,11 +81,14 @@
     <Button
         android:id="@+id/btn_register"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_medium"
         android:text="Register"
+        android:background="@drawable/shape_button"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
@@ -83,7 +98,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
         android:text="Forget Password?"
+        android:textColor="#3F3F3F"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/MateriaPassword"
         app:layout_constraintTop_toBottomOf="@+id/MateriaPassword" />
 
@@ -103,10 +121,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
         android:text="Haloo!"
         android:textColor="#4483CD"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -115,27 +133,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
         android:text="Silahkan masukan email dan\nkata sandi yang sudah ada"
-        android:textSize="16sp"
+        android:textSize="12sp"
+        android:textColor="#353535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
         android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login Sebagai Konsultan?"/>
+            android:fontFamily="@font/montserrat_light"
+            android:text="Login Sebagai Konsultan?"
+            android:textColor="#423E3E"
+            android:textSize="12sp" />
+
         <TextView
             android:id="@+id/loginKonsultan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Login"
             android:textColor="@color/blue"
-            android:textStyle="bold"
-            android:text="Login"/>
+            android:textSize="12sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

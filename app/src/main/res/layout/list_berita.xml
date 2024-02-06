@@ -30,15 +30,18 @@
                     android:layout_width="match_parent"
                     android:maxLength="15"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
                     android:gravity="center"
-                    android:textStyle="bold"
                     android:text="Lorem ipsum" />
                 <TextView
                     android:id="@+id/desk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="10sp"
+                    android:textColor="#666562"
                     android:maxLength="50"
                     android:text="Lorem Ipsum dolor sit amet, consecture adipiscing." />
             </LinearLayout>

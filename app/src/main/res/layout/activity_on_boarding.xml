@@ -33,6 +33,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginBottom="32dp"
         android:text="Skip"
+        android:background="@drawable/shape_button"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="14sp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"/>
 
@@ -44,7 +47,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="32dp"
+        android:background="@drawable/shape_button"
         android:text="Previous"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="14sp"
         android:visibility="invisible" />
 
     <ImageView
@@ -64,8 +70,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/shape_button"
         android:layout_marginBottom="32dp"
         android:text="Get Started!"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="14sp"
         android:visibility="invisible" />
 
 </RelativeLayout>

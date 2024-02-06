@@ -26,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_above="@id/ly"
         android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
         android:id="@+id/chatRecyclerView"/>
 
 
@@ -45,6 +46,9 @@
                 android:inputType="text"
                 android:background="@color/colorTextBackground"
                 android:hint="Masukkan Pesan"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"
                 android:padding="12dp"
                 android:textColor="@color/colorText" />
 

@@ -22,23 +22,40 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Horee!!\n Silahkan cek email untuk proses selanjutnya"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:text="Horee"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="22sp"
+        android:textColor="@color/tittleText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_back"
+    <TextView
+        android:id="@+id/textView8"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        android:text="Login"
+        android:gravity="center"
+        android:text="Silahkan cek email untuk proses\nselanjutnya"
+        android:fontFamily="@font/montserrat"
+        android:textSize="14sp"
+        android:textColor="@color/descText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/shape_button"
+        android:text="Login"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 </androidx.constraintlayout.widget.ConstraintLayout>

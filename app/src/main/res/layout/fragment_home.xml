@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.HomeFragment">
 
     <RelativeLayout
@@ -74,8 +74,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:text="Personality\nQuest" />
+                                android:text="Personality\nQuest"
+                                android:textSize="12sp" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -102,8 +104,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:text="IT Career 101" />
+                                android:text="IT Career 101"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -129,8 +133,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:text="Learning\nHub" />
+                                android:text="Learning\nHub"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -161,11 +167,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
                                 android:src="@drawable/icon_4" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:text="CodeQuiz" />
+                                android:text="CodeQuiz"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -191,8 +200,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:text="News" />
+                                android:text="News"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -218,8 +229,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:text="Discuss" />
+                                android:text="Discuss"
+                                android:textSize="12sp" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -241,8 +254,8 @@
                             android:layout_alignParentLeft="true"
                             android:layout_toLeftOf="@id/selenkapnyakarir"
                             android:text="Recommendation career"
-                            android:textStyle="bold"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/selenkapnyakarir"
@@ -256,9 +269,9 @@
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvkarir"
-                        android:layout_marginTop="20dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp" />
 
                 </LinearLayout>
                 <!--            Berita-->
@@ -269,6 +282,7 @@
                     android:layout_marginTop="24dp"
                     android:layout_marginBottom="80dp"
                     android:orientation="vertical">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -279,8 +293,8 @@
                             android:layout_alignParentLeft="true"
                             android:layout_toLeftOf="@id/selenkapnyaberita"
                             android:text="News"
-                            android:textStyle="bold"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/selenkapnyaberita"
@@ -291,11 +305,12 @@
                             android:textColor="@color/blue"
                             android:textSize="15sp" />
                     </RelativeLayout>
+
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvberitab"
-                        android:layout_marginTop="20dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp" />
 
                 </LinearLayout>
             </LinearLayout>

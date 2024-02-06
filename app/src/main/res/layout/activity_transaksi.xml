@@ -12,215 +12,273 @@
         android:id="@+id/tv_judul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
         android:text="Transaksi"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
     <RelativeLayout
         android:id="@+id/kartu_konsultasi"
-        android:layout_below="@id/tv_judul"
-        android:paddingTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_judul"
+        android:paddingTop="20dp">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/kartu"/>
+            android:src="@drawable/kartu" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:orientation="horizontal"
-            android:paddingTop="30dp"
-            android:paddingLeft="30dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
+            android:paddingLeft="15dp"
+            android:paddingTop="30dp">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Konsultasi"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                />
-            <TextView
-                android:paddingTop="10dp"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="Konsultasi dengan ahli dibidang teknologi yang di inginkan dengan waktu yang ditentukan"
-                android:textSize="15sp"/>
-        </LinearLayout>
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Konsultasi"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Konsultasi dengan ahli dibidang teknologi yang di inginkan dengan waktu yang ditentukan"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
             <ImageView
-                android:paddingLeft="-30dp"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/it_career_1"/>
+                android:paddingLeft="-30dp"
+                android:src="@drawable/group_44" />
         </LinearLayout>
     </RelativeLayout>
 
     <EditText
         android:id="@+id/edt_vocher"
-        android:paddingLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/edt"
-        android:layout_below="@id/kartu_konsultasi"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:layout_below="@id/kartu_konsultasi"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edt"
+        android:fontFamily="@font/montserrat"
+        android:hint="Masukkan Kode Voucher"
         android:inputType="text"
-        android:hint="Masukkan Kode Voucher"/>
+        android:paddingLeft="20dp"
+        android:textSize="14sp" />
+
     <Button
         android:id="@+id/btn_apply"
-        android:layout_marginTop="40dp"
-        android:layout_below="@id/kartu_konsultasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Apply"
+        android:layout_below="@id/kartu_konsultasi"
         android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/button"/>
+        android:background="@drawable/button"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Apply"
+        android:textSize="14sp" />
+
     <TextView
         android:id="@+id/tv_pembayaran"
-        android:paddingTop="20dp"
-        android:text="Pembayaran"
-        android:textSize="20sp"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edt_vocher"/>
+        android:layout_below="@id/edt_vocher"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingTop="20dp"
+        android:text="Pembayaran"
+        android:textColor="@color/tittleText"
+        android:textSize="20sp" />
+
     <TextView
         android:id="@+id/bank_tf"
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center_vertical"
         android:layout_below="@id/tv_pembayaran"
-        android:text="Bank Transfer"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt"
         android:drawableRight="@drawable/baseline_keyboard_arrow_down_24"
-        android:background="@drawable/edt"/>
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="Bank Transfer"
+        android:textSize="14sp" />
+
     <LinearLayout
         android:id="@+id/ly3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_below="@id/bank_tf"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/bank_tf">
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/bank"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="50dp"
-            android:text="Bank"
-            android:gravity=""
+            android:layout_below="@id/bank_tf"
+            android:layout_weight="1"
             android:background="@drawable/button"
             android:drawableRight="@drawable/baseline_keyboard_arrow_down_24_white"
-            android:layout_below="@id/bank_tf"/>
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity=""
+            android:text="Bank" />
+
         <EditText
             android:id="@+id/edt_account"
-            android:layout_marginLeft="5dp"
-            android:paddingLeft="10dp"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
             android:background="@drawable/edt"
-            android:hint="Account Number"/>
+            android:fontFamily="@font/montserrat"
+            android:hint="Account Number"
+            android:paddingLeft="15dp"
+            android:textSize="14sp" />
+
+
     </LinearLayout>
-        <RelativeLayout
-            android:id="@+id/rl"
-            android:layout_marginTop="30dp"
-            android:layout_below="@id/ly3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/bg"
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:src="@drawable/button"/>
-            <TextView
-                android:id="@+id/tv_sub"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Subtotal:"
-                android:textColor="@color/white"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:id="@+id/txt_sub"
-                android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rp.X.XXX.XX"
-                android:layout_marginRight="10dp"
-                android:textColor="@color/white"
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:layout_below="@id/tv_sub"
-                android:id="@+id/tv_fee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fee:"
-                android:textColor="@color/white"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:id="@+id/txt_fee"
-                android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rp.X"
-                android:layout_below="@id/txt_sub"
-                android:layout_marginRight="10dp"
-                android:textColor="@color/white"
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:id="@+id/tv_disc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Discount:"
-                android:layout_below="@id/tv_fee"
-                android:textColor="@color/white"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:id="@+id/txt_disc"
-                android:layout_below="@id/txt_fee"
-                android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="X%"
-                android:layout_marginRight="10dp"
-                android:textColor="@color/white"
-                android:layout_marginTop="10dp"/>
-            <TextView
-                android:id="@+id/tv_total"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Total:"
-                android:layout_below="@id/tv_disc"
-                android:textColor="@color/white"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="12dp"/>
-            <TextView
-                android:id="@+id/txt_total"
-                android:layout_below="@id/txt_disc"
-                android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rp.X.XXX.XX"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginRight="10dp"
-                android:textColor="@color/white"
-                android:layout_marginTop="10dp"/>
-        </RelativeLayout>
-    <Button
-        android:id="@+id/payment"
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rl"
-        android:layout_marginTop="20dp"
-        android:text="Beli"
-        android:background="@drawable/button"/>
+        android:layout_below="@id/ly3"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ly3"
+                android:background="@drawable/kartu1">
+
+                <TextView
+                    android:id="@+id/tv_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#E6FFFFFF"
+                    android:text="Subtotal:"
+                     />
+
+                <TextView
+                    android:id="@+id/txt_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Rp.X.XXX.XX"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_sub"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Fee:"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#E6FFFFFF"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_sub"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Rp.X"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_disc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fee"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Discount:"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#E6FFFFFF"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_disc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_fee"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="X%"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_disc"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Total:"
+
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#E6FFFFFF"
+                     />
+
+                <TextView
+                    android:id="@+id/txt_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_disc"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Rp.X.XXX.XX"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/montserrat_bold" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:text="Beli" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </RelativeLayout>

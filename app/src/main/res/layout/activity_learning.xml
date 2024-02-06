@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:text="Pelatihan karir"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="22sp"
         android:textAlignment="center"/>
 
     <androidx.recyclerview.widget.RecyclerView
