@@ -1,76 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.KonsultasiFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginBottom="54dp"
+        android:orientation="vertical"
         android:padding="24dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
             android:text="Konsultasi"
-            android:textStyle="bold"
-            android:textSize="25sp"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textSize="22sp" />
+
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:iconifiedByDefault="false"
-            app:searchHintIcon="@null"
-            app:queryHint="Search...."
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_search"
             android:focusable="false"
-            />
+            android:layoutDirection="rtl"
+            app:searchIcon="@drawable/baseline_search_24" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:orientation="vertical">
 
-<!--        Rekomendasi Konsultasi-->
-            <TextView
-                android:id="@+id/pencarian"
-                android:visibility="gone"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hasil Pencarian" />
-            <TextView
-            android:id="@+id/rekomendasi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Rekomendasi Konsultan" />
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvRKonsul"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:orientation="vertical"
+                android:paddingTop="20dp">
 
-<!--        Semua Konsultasi-->
-            <TextView
-                android:id="@+id/semua"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Semua Konsultan" />
+                <!--        Rekomendasi Konsultasi-->
+                <TextView
+                    android:id="@+id/pencarian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil Pencarian"
+                    android:visibility="gone" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvSKonsul"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/rekomendasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#666562"
+                    android:layout_marginTop="18dp"
+                    android:text="Rekomendasi Konsultan" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvRKonsul"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp" />
+
+                <!--        Semua Konsultasi-->
+                <TextView
+                    android:id="@+id/semua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#666562"
+                    android:text="Semua Konsultan" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSKonsul"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp" />
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 

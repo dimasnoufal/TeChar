@@ -29,11 +29,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nama Karir"
-            android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textSize="22sp"
+            android:fontFamily="@font/montserrat_bold"/>
 
         <RelativeLayout
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -43,7 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:text="Jenis Karir"
-                android:textSize="20sp" />
+                android:fontFamily="@font/montserrat"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/gaji"
@@ -51,8 +51,8 @@
                 android:layout_height="wrap_content"
                 android:text="Rp. 5.000.000.-"
                 android:layout_alignParentRight="true"
-                android:textColor="@color/blue"
-                android:textSize="15sp" />
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="16sp" />
         </RelativeLayout>
 
         <TextView
@@ -60,31 +60,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Deskripsi :"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/deskripsi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
             android:justificationMode="inter_word"
             android:text="Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf."
-            android:textSize="20sp"/>
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Keahlian :"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/keahlian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
             android:text="- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum \n- Lorem Ipsum"
-            android:textSize="20sp"/>
+            android:textSize="14sp"/>
     </LinearLayout>
     </ScrollView>
 

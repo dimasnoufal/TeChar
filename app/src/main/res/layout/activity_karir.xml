@@ -11,9 +11,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pengetahuan Jenis karir"
-        android:textStyle="bold"
-        android:textSize="25sp"
+        android:text="Jenis karir"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="22sp"
         android:textAlignment="center"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvkarir"

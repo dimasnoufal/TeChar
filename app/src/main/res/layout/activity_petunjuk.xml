@@ -10,53 +10,71 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginBottom="24dp"
         android:text="Petunjuk"
         android:textAllCaps="true"
+        android:fontFamily="@font/montserrat_bold"
         android:textColor="@color/blue"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="72dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
         android:text="Anda harus memilih jawaban untuk setiap pertanyaan. Ada kemungkinan bahwa keduanya sangat mendiskripsikan anda, tetapi pilihlah salah satu yang lebih anda sukai."
+        android:justificationMode="inter_word"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_mulai"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="250dp"
         android:text="Mulai"
+        android:background="@drawable/shape_button"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
         android:text="Tujuan dari tes ini adalah untuk menemukan kecendurangan alami anda. Mohon tidak memikirkan tentang situasi anda, teman, keluarga, rekan kerja dan sebagainya. Pilihan yang ada tidak lebih atau lebih buruk, setiap tipe memiliki kelebihan dan kekurangannya."
+        android:justificationMode="inter_word"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mulai"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -70,7 +70,7 @@ class KonsultanActivity : AppCompatActivity() {
 
         val messagesRef = db.reference.child(MESSAGES_CHILD)
 
-        binding.view.setOnClickListener {
+        binding.img.setOnClickListener {
             startActivity(Intent(this, ProfileKonsultanActivity::class.java))
             finish()
         }
